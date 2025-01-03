@@ -1,0 +1,20 @@
+﻿&title=戳戳樂&
+&font=標楷體&
+&fontsize=46&
+&col=4&
+&row=2&
+&showNumber=0&
+&mediaFolder=data&
+&soundFilename=20100412-poke-1.mp3&
+&paper=alien.png,angel.png,base.png,billy.png,borg.png,bricky.png,camouflage.png,candy.png,chef.png&
+&blackborder=15&
+&question=
+eye 的中文是什麼？,1
+sample/cat.png,1
+sample/eye.mp3,1
+sample/train.flv,1
+圖片中的動物英文是什麼？#sample/cat.png,1
+聽聽看，它的中文該怎麼說？#sample/eye.mp3,1
+聽聽看，並在圖中出找出它說的部位#sample/cat.png#sample/eye.mp3,1
+再抽一次,1
+&

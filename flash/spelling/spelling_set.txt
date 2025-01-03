@@ -1,0 +1,9 @@
+﻿&title=單字高手&
+&number_enabled=no&
+&logger_url=&
+&datafolder=data&
+&menu=
+單字高手:表情,03.txt
+單字高手:動物,01.txt
+單字高手:樂器,02.txt
+&

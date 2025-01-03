@@ -1,0 +1,17 @@
+﻿&menuCount=9&datafolder=data2&title=︻唐詩三百首︼&
+&defaultFontSize=16&
+&cols=3&
+&rows=5&
+&menu1=每週一詩,9501.txt&
+&menu1=每週一詩,9502.txt&
+&menu1=每週一詩,9601.txt&
+&menu2=五言絕句,5-quatrain.txt&
+&menu2=五言絕句,54.txt&
+&menu3=七言絕句,7-quatrain.txt&
+&menu4=七言絕句,74.txt&
+&menu5=五言律詩,5-regular-verse.txt&
+&menu6=七言律詩,7-regular-verse.txt&
+&menu7=五言古詩,5-ancient-verse.txt&
+&menu8=七言古詩,7-ancient-verse.txt&
+&menu9=樂府,folk-song-styled-verse.txt&
+&menu10=◎結束◎,quit&

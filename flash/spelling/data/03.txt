@@ -1,0 +1,1 @@
+﻿&line=1;angry,生氣,mp3/angry.mp3;smile,微笑,mp3/smile.mp3;cry,哭,mp3/cry.mp3&

@@ -1,0 +1,7 @@
+﻿&datafile=data2/9601.txt&
+&authorsfile=data2/authors.txt&
+&defaultFontSize=16&
+&cols=3&
+&rows=5&
+&firstnumber=1&
+&firstdate=2009/08/31&
