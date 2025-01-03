@@ -1,0 +1,15 @@
+﻿&title=對對碰&
+&font=標楷體&
+&maxCol=4&
+&maxRow=3&
+&questionMax=9&
+&scoreAdd=100&
+&scoreMinus=150&
+&cards=
+桌子,ㄓㄨㄛ ˙ㄗ
+電燈,ㄉㄧㄢˋ ㄉㄥ
+images/frog.jpg,ㄑㄧㄥ青 ㄨㄚ蛙
+images/girl.swf,ㄉㄚˇ打 ㄑㄧㄡˊ球
+images/gsyan.jpg,臺北市力行國小‧雄
+Dog,狗
+&

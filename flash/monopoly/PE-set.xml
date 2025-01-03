@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--主設定---------------------------------------------------------- 
+	col:橫向幾個 (col <= 7)
+	row: 縱向幾個 (row <= 6)
+	total: 全部幾步(超過時會自動修正)
+	first_x: 第一個的 x 座標(以畫素為單位,左上角為 0 )
+	first_y: 第一個的 y 座標(以畫素為單位,左上角為 0 )
+	title: 標題
+-------------------------------------------------------------------->
+<settings col="7" />
+<settings row="6" />
+<settings total="24" />
+<settings first_x="40" />
+<settings first_y="20" />
+<settings title="健康高手" />
+<!--每一步的設定-----------------------------------------------------
+	id:	第幾步(由 1 開始)
+	type: 名稱要與問答題庫對應到(空字串代表為一般格子，沒有問答題)
+	text: 格子中要顯示的文字(最多兩個中文字)
+	font: 文字的字型大小 ( blocks中的為預設值,block中的則為個別設定)
+-------------------------------------------------------------------->
+<blocks font="48">
+	<block id="1" type="start" text="開始" />
+	<block id="3" type="chfate" text="！" />
+	<block id="5" type="ch123" text="？" />
+	<block id="6" type="ch4567" text="★" />	
+	<block id="7" type="ch891011" text="＄" />
+	<block id="9" type="fate" text="！" />
+	<block id="10" type="ch123" text="？" />
+	<block id="12" type="ch891011" text="＄" />
+	<block id="13" type="fate" text="！" />
+	<block id="14" type="ch4567" text="★" />		
+	<block id="15" type="ch123" text="？" />
+	<block id="17" type="fate" text="！" />
+	<block id="18" type="ch891011" text="＄"  />
+	<block id="19" type="ch123" text="？" />
+	<block id="20" type="ch4567" text="★" />		
+	<block id="21" type="fate" text="！" />
+</blocks>
+<!--問答的設定-------------------------------------------------------
+	tag 的名稱如果是 xxx 必須對應到 block 中的 type="xxxx"
+	
+	title:		問答對話框上方的標題字
+	text:		問答的題目(說明文字)
+	step:		可前進幾格(正:前進, 負:後退)
+	options:	可供選擇的答案(以逗號分隔每個選項,建議不要超過4個)
+	answer: 	標準解答的編號(由 1 開始)
+	
+	如果沒有 options 和 answer ：
+		類似命運，只顯示對話，使用者不需要回答問題
+		
+	特別用法，加圖片的語法：
+		題目：在 text 中使用逗號分隔，逗號左側為文字，右側為圖片路徑
+		選項：在 options 中使用分號(分隔選項)及逗號(分隔文字、圖片)
+-------------------------------------------------------------------->
+<special title="特別題:圖形題">
+	<item text="右圖是什麼動物？,images/frog.jpg" step="3" options="熊,青蛙,河馬,長頸鹿" answer="2" />
+	<item text="這個遊戲的作者是誰？" step="10" options="甲,images/frog.jpg;乙,images/2.jpg;丙,images/3.jpg;丁,images/gsyan.jpg" answer="4" />
+	<item text="右圖的性別和下面哪一個相同？,images/girl.swf" step="5" options="甲,images/gsyan.jpg;乙,images/2.jpg;丙,images/3.jpg;丁,images/1.jpg" answer="2" />	
+</special>
+
+<start title="環遊世界一周">
+	<item text="恭喜環遊世界一周，前進６格" step="6" />
+	<item text="送您回國禮，前進４格" step="4" />
+	<item text="慶祝週年慶，前進２格" step="2" />	
+</start>
+
+<fate title="命運">
+	<item text="拾金不昧，前進１格" step="1" />
+	<item text="掉到水溝，後退１格" step="-1" />
+	<item text="坐公車讓座，前進３格" step="3" />
+	<item text="努力認真，前進１格" step="1" />
+	<item text="熱心服務，前進３格" step="3" />
+</fate>
+
+
+<ch123 title="１～３單元">
+	<item text="服從教練或救生員的指導是為了什麼？" step="1" options="為了安全,怕被處罰,好玩,怕被趕出游泳場所" answer="1" />
+	<item text="到了陌生環境為什麼要留意「緊急疏散出口」的標示？" step="1" options="為了逃生安全,老師規定的,政府規定的,沒有什麼意義" answer="1" />
+	<item text="游泳時，下面哪個行為是不對的？" step="2" options="做熱身運動,在游泳池邊奔跑、追逐,遵守安全規則,偕伴游泳" answer="2" />
+	<item text="游泳時，下面哪個行為是不對的？" step="2" options="做熱身運動,在游泳池邊奔跑、追逐,遵守安全規則,偕伴游泳" answer="2" />
+	<item text="發現有人溺水時，怎麼做是危險的？" step="2" options="大聲呼救,單獨前往救人,尋求救生員的協助,拋繩索或救生圈給他" answer="2" />
+	<item text="運動前後補充水分，是為了預防怎樣的運動傷害？" step="3" options="抽筋,扭傷,脫水,骨折" answer="3" />
+	<item text="下列何者是在游泳池游泳時要注意的事項？" step="3" options="遵守安全守則,做暖身運動,聽從救生員的指示,以上皆是" answer="4" />
+	<item text="在無人管理的水域戲水容易發生什麼？" step="3" options="易因暗流或漩渦捲入水中,易因岩石溼滑而跌傷,易因河床驟然凹陷陡降而溺水,以上皆是" answer="4" />
+	<item text="到運動場地從事運動時，必須留意什麼？" step="3" options="場地設備是否齊全,器材是否安全,運動安全守則,以上皆是" answer="4" />
+
+	<item text="迷路時，應該先怎麼做較適宜？" step="1" options="冷靜下來,大發脾氣,大哭大鬧,害怕的發抖" answer="1" />
+	<item text="我們可以怎麼幫助新同學？" step="2" options="幫他打架,帶他熟悉環境,惡言相向,不理他" answer="2" />
+	<item text="下列哪一項是屬於清潔用品？" step="2" options="洗衣粉,沐浴乳,牙膏,洗髮乳" answer="1" />
+	<item text="下列哪一項是屬於清潔用品？" step="2" options="洗衣粉,沐浴乳,牙膏,洗髮乳" answer="1" />
+	<item text="購買家庭用品時，應先考慮什麼？" step="3" options="便不便宜,有沒有贈品,品質與實用性,有不有名" answer="3" />
+	<item text="到了新環境時，怎麼做可以預防迷路？" step="3" options="緊跟著隨行的大人,熟記家人的電話,約定集合地點,以上皆是" answer="4" />
+	<item text="面對新環境時，要怎麼做才能盡快消除陌生感與壓力？" step="3" options="躲在家中不出門,等同學邀請才出門,纏著父母陪,多聽、多問" answer="4" />
+
+	<item text="服用藥物時，要用什麼服用比較安全？" step="1" options="白開水,果汁,可樂,咖啡" answer="1" />
+	<item text="藥物的來源以哪一項最正確、安全的？" step="1" options="醫師開處方箋,自行買成藥,偏方,路邊賣的藥" answer="1" />
+	<item text="檢查牙齒時，要看哪一科？" step="2" options="眼科,牙科,耳鼻喉科,骨科" answer="2" />
+	<item text="生病了，就診時要怎麼做？" step="2" options="掛號、付費,告訴醫師症狀,感謝醫護人員,以上皆是" answer="4" />
+	<item text="生病了，就診時要怎麼做？" step="2" options="掛號、付費,告訴醫師症狀,感謝醫護人員,以上皆是" answer="4" />
+	<item text="存放藥物時，要放置在哪裡才不會誤食？" step="2" options="方便取用的地方,幼童拿不到的高處,糖果盒子內,冰箱中與食物放一起" answer="2" />
+	<item text="下列哪項是不用標示在藥袋上？" step="3" options="姓名,性別,身高,用法" answer="3" />
+</ch123>
+
+<ch4567 title="４～７單元">
+	<item text="下列哪一項不是上跳箱課時要準備的器材？" step="2" options="墊子,安全帽,跳箱,踏板" answer="2" />
+	<item text="哪項不是布置跳箱時，要注意的事項？" step="3" options="場地平坦、無尖銳物品,檢查卡榫是否密合,做一些美化的裝飾,前後放置踏板與墊子" answer="3" />
+	<item text="為什麼每個人都要遵守訂定的運動規則？" step="3" options="比較安全,是一種守法的精神,能促進團體的和諧,以上皆是" answer="4" />
+	<item text="下列哪項是好的運動行為？" step="3" options="穿著適當的運動服裝,愛護運動器材,遵守遊戲規則,以上皆是" answer="4" />
+	<item text="下列哪一類型的活動較適合兒童期的孩子？" step="1" options="動作簡單,溫和舒緩的,消耗熱量多的,技巧性高" answer="1" />
+	<item text="跑步時，雙手擺動可以怎樣？" step="2" options="跑得較慢,跑得更快,會感到很費力,步伐會變亂" answer="2" />
+	<item text="從事跳繩活動時，繩子的長度要如何？" step="2" options="越長越好,適合自己身高的長度,越短越好,沒有規定" answer="2" />
+	<item text="運動後至少要多久才可以用餐？" step="3" options="馬上可以用餐,5分鐘,30分鐘,四個小時" answer="3" />
+	<item text="哪一項因素會受到年齡及體能的影響？" step="3" options="運動習慣,運動能力,運動需求,以上皆是" answer="4" />
+	<item text="運動後哪一項行為是正確的？" step="3" options="大口喝冰水,吃很多東西補充體力,立刻坐下來休息,做完緩和運動後才休息" answer="4" />
+	<item text="運動後應該怎麼做才健康？" step="3" options="洗手,擦汗,小口的補充水分,以上皆是" answer="4" />
+
+	<item text="下列哪一項不是「強化骨骼三要訣」的內容？" step="1" options="多吃鈣片,適度運動,適量晒太陽,均衡飲食" answer="1" />
+	<item text="疑似骨折時，哪項行為是不對的？" step="1" options="趕快請同學扶起走動,不隨意移動，留在原處,找大人幫忙,固定傷處，以擔架送醫就診" answer="1" />
+	<item text="下列哪一項是對身體有幫助的食物？" step="1" options="白開水,炸雞,薯條,冰淇淋" answer="1" />
+	<item text="哪一項食物較不能幫助骨骼發育？" step="2" options="深色蔬菜,糖果,小魚乾,奶類製品" answer="2" />
+	<item text="下列哪一項不是長期飲用碳酸飲料會造成的後果？" step="2" options="鈣質流失,骨質疏鬆,容易骨折,長得高又壯" answer="4" />
+	<item text="吃出健康不要胖，下列哪項是錯的？" step="3" options="少鹽,少油,多糖,多纖維" answer="3" />
+	<item text="跑步需要哪個部位的協調，才能完成跑步的動作？" step="3" options="骨骼,肌肉,關節,以上皆是" answer="4" />
+	<item text="我們可以藉由什麼來幫助骨骼的發育？" step="3" options="補充含鈣質的食物,適度的運動,適度的晒太陽,以上皆可" answer="4" />
+	<item text="怎麼做才是保護骨骼的行為？" step="3" options="從高處跳下來,在走廊上奔跑,在樓梯跳上跳下,以正確的姿勢從事活動" answer="4" />
+
+	<item text="選購運動裝備需具備以下哪些標準？" step="2" options="價格是否合理,合適性,實用性,以上皆是" answer="4" />
+	<item text="當從事必須用身體部位與同學接觸的運動時，你會怎麼做？" step="2" options="責罵他,微笑與他互動,害羞拒絕,作弄他" answer="2" />
+	<item text="從事籃球運動時，應注意什麼？" step="3" options="選擇合適的場地,正確的使用籃球,用球袋裝好球,以上皆是" answer="4" />
+</ch4567>
+
+<ch891011 title="８～１１單元">
+	<item text="到別人家做客時，怎麼做可以減少主人的麻煩？" step="1" options="盡早回覆是否參加,指定菜色,請主人來接我,不用回覆" answer="1" />
+	<item text="發現自己的長處是為了什麼？" step="2" options="讓自己更神氣,讓自己有自信,可以很驕傲,看不起別人" answer="2" />
+	<item text="個人的優點和特色非常重要，下列哪一項不是好的特色？" step="2" options="貼心乖巧,自私自利,樂觀開朗,聰明伶俐" answer="2" />
+	<item text="到別人家玩時，下列哪個不是做客人應有的表現？" step="3" options="避免造成主人家的困擾,協助收拾環境,大吵大鬧,向主人道謝" answer="3" />
+	<item text="下列哪一項邀請朋友參加活動的方法，比較沒有誠意？" step="3" options="打電話,寫邀請卡,請他人代為通知,親口邀請" answer="3" />
+	<item text="下列哪一項不是好主人的行為表現？" step="3" options="與客人分享有趣的事物,提早做好準備事物,炫耀家中的財富,每個人都要招呼到" answer="3" />
+	<item text="到同學家時，下列哪個行為是不對的？" step="3" options="對長輩沒禮貌,擅自進主人房間,大聲吼叫,以上皆是" answer="4" />
+	<item text="當你想邀請同學來家裡玩時，應該先怎麼做？" step="3" options="事先做規畫,徵求父母的同意,事先做準備,以上皆是" answer="4" />
+
+	<item text="下列哪一項不是爺爺、奶奶童年時的童玩？" step="1" options="電動玩具,竹蜻蜓,彈珠,陀螺" answer="1" />
+	<item text="下列哪一項不是我國本土的傳統童玩？" step="2" options="竹筷槍,搖控車,竹蜻蜓,高蹺" answer="2" />
+	<item text="踩鐵罐高蹺需要注意什麼？" step="2" options="手腳協調,身體平衡感,腳踩的位置要適中,以上皆是" answer="4" />
+	<item text="玩竹蜻蜓時，下列哪種地方比較不適合？" step="3" options="空曠的場地,平坦的地方,狹窄的空間,操場" answer="3" />
+	<item text="古時廟會常會有什麼活動演出，讓孩子有樣學樣而做出鐵罐高蹺？" step="3" options="打陀螺,踢毽子,踩高蹺,丟沙包" answer="3" />
+	<item text="「陀螺」的閩南語又叫做什麼？" step="3" options="千千,打地雷,拋繩,干樂" answer="4" />
+
+	<item text="運動前要做什麼，才能預防運動傷害？" step="2" options="睡覺,做暖身運動,大吃大喝,什麼都不用做" answer="2" />
+	<item text="打棒球的預備姿勢，腳應張開與下列哪一個部位同寬？" step="2" options="頭,肩,腰,膝" answer="2" />
+	<item text="樂樂棒球的遊戲規則：連續揮空棒幾次就出局？" step="3" options="1次,2次,3次,10次" answer="3" />
+	<item text="打棒球時要注意什麼原則？" step="3" options="揮擊時保持適當的距離,選擇平坦的場地,做出正確揮擊動作,以上皆是" answer="4" />
+
+	<item text="下列哪項做法無法吃出食物的美味，吃出健康好體力？" step="2" options="選用新鮮的食材,添加多種調味料,食用當季蔬果,簡單的料理 answer="1" />
+	<item text="下列哪項水果在臺灣冬天盛產？" step="2" options="西瓜,橘子,芒果,荔枝" answer="2" />
+	<item text="我們要稱爸爸的哥哥為？" step="3" options="叔叔,舅舅,伯父,堂哥" answer="3" />
+	<item text="下面哪一項行為不是良好的用餐禮儀？" step="3" options="用餐時保持愉快的心情,不任意敲打餐具,翻攪食物找喜歡吃的食物,讓長輩先取用" answer="3" />
+	<item text="我們要稱姑姑的先生為？" step="3" options="姨丈,叔叔,伯父,姑丈" answer="4" />
+	<item text="飲食習慣會受到什麼的影響？" step="3" options="環境,習俗,氣候,以上皆有" answer="4" />
+	<item text="和親戚聯絡感情的方式有哪些？" step="3" options="相約出遊,邀請至家中做客,有?洵衈飢U,以上皆是" answer="4" />
+</ch891011>
+
+</xml>

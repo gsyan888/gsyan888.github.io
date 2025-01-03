@@ -1,0 +1,8 @@
+﻿&menuCount=4&datafolder=data&title=ㄊㄤˊ唐 ㄕ詩 ㄙㄢ三 ㄅㄞˇ百 ㄕㄡˇ首&
+&menu1=五言絕句,5-quatrain.txt&
+&menu2=七言絕句,7-quatrain.txt&
+&menu3=五言律詩,5-regular-verse.txt&
+&menu4=七言律詩,7-regular-verse.txt&
+&menu5=五言古詩,5-ancient-verse.txt&
+&menu6=七言古詩,7-ancient-verse.txt&
+&menu7=樂府,folk-song-styled-verse.txt&

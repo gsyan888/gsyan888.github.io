@@ -1,0 +1,46 @@
+﻿新對對碰<br />
+<object align="middle" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" id="spelling" width="550" height="412">
+  <param name="quality" value="high" />
+  <param name="menu" value="false" />
+  <param name="allowFullScreen" value="true" />
+  <param name="movie" value="http://mail.lsps.tp.edu.tw/~gsyan/works/flash/match2/match2.swf" />
+  <param name="flashvars" 
+         value="
+&title=對對碰&
+&maxCol=4&
+&maxRow=3&
+&questionMax=9&
+&scoreAdd=100&
+&scoreMinus=150&
+&cards=
+桌子,ㄓㄨㄛ ˙ㄗ
+電燈,ㄉㄧㄢˋ ㄉㄥ
+images/frog.jpg,ㄑㄧㄥ青 ㄨㄚ蛙
+images/girl.swf,ㄉㄚˇ打 ㄑㄧㄡˊ球
+images/gsyan.jpg,臺北市力行國小‧雄
+Dog,狗
+&
+" />
+
+  <embed src="http://mail.lsps.tp.edu.tw/~gsyan/works/flash/match2/match2.swf"
+    width="550" height="412" quality="high" allowFullScreen="true"  
+    flashvars="
+&title=對對碰&
+&maxCol=4&
+&maxRow=3&
+&questionMax=9&
+&scoreAdd=100&
+&scoreMinus=150&
+&cards=
+桌子,ㄓㄨㄛ ˙ㄗ
+電燈,ㄉㄧㄢˋ ㄉㄥ
+images/frog.jpg,ㄑㄧㄥ青 ㄨㄚ蛙
+images/girl.swf,ㄉㄚˇ打 ㄑㄧㄡˊ球
+images/gsyan.jpg,臺北市力行國小‧雄
+Dog,狗
+&
+" 
+ pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"></embed>
+</object>
+<br />
+<p align="right">↑<br />按一下右下角的小三角可以出現工具放大為全螢幕</p>

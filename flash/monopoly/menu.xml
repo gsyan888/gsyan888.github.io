@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--選單設定---------------------------------------------------------- 
+	text: 選單標題字
+	filename:  XML 設定檔(題庫)的檔名
+-------------------------------------------------------------------->
+<menu title="小博士闖天關">
+	<item text="影音測試" filename="sound-set.xml" />
+	<item text="三上社會5" filename="set.xml" />
+	<item text="三上健康" filename="PE-set.xml" />
+</menu>
+</xml>

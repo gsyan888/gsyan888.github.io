@@ -1,0 +1,8 @@
+﻿&menuCount=7&datafolder=data&title=ㄉㄨㄟˋ對 ㄉㄨㄟˋ對 ㄆㄥˋ碰&
+&menu1=相似詞,c1.txt&
+&menu2=相反詞,c2.txt&
+&menu3=三上1、2部首,r1.txt&
+&menu4=三上3、4部首,r2.txt&
+&menu5=三上5、6部首,r3.txt&
+&menu6=三上7注音,p6-6.txt&
+&menu7=三上7部首,r6-6.txt&

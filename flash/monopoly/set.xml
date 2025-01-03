@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--主設定---------------------------------------------------------- 
+	col:橫向幾個 (col <= 7)
+	row: 縱向幾個 (row <= 6)
+	total: 全部幾步(超過時會自動修正)
+	first_x: 第一個的 x 座標(以畫素為單位,左上角為 0 )
+	first_y: 第一個的 y 座標(以畫素為單位,左上角為 0 )
+	title: 標題
+-------------------------------------------------------------------->
+<settings col="7" />
+<settings row="6" />
+<settings total="22" />
+<settings first_x="40" />
+<settings first_y="20" />
+<settings title="大富翁" />
+<!--每一步的設定-----------------------------------------------------
+	id:	第幾步(由 1 開始)
+	type: 名稱要與問答題庫對應到(空字串代表為一般格子，沒有問答題)
+	text: 格子中要顯示的文字(最多兩個中文字)
+	font: 文字的字型大小 ( blocks中的為預設值,block中的則為個別設定)
+-------------------------------------------------------------------->
+<blocks font="48">
+	<block id="1" type="start" text="開始" />
+	<block id="3" type="fate" text="！" />
+	<block id="5" type="chance" text="？" />
+	<block id="6" type="special" text="★" />	
+	<block id="7" type="chance" text="？" />
+	<block id="9" type="fate" text="！" />
+	<block id="10" type="chance" text="？" />
+	<block id="12" type="" text="加油" />
+	<block id="13" type="fate" text="！" />
+	<block id="14" type="special" text="★" />		
+	<block id="15" type="chance" text="？" />
+	<block id="17" type="fate" text="！" />
+	<block id="18" type="" text="Stop" font="36" />
+	<block id="19" type="chance" text="？" />
+	<block id="20" type="special" text="★" />		
+	<block id="21" type="fate" text="！" />
+</blocks>
+<!--問答的設定-------------------------------------------------------
+	tag 的名稱如果是 xxx 必須對應到 block 中的 type="xxxx"
+	
+	title:		問答對話框上方的標題字
+	text:		問答的題目(說明文字)
+	step:		可前進幾格(正:前進, 負:後退)
+	options:	可供選擇的答案(以逗號分隔每個選項,建議不要超過4個)
+	answer: 	標準解答的編號(由 1 開始)
+	
+	如果沒有 options 和 answer ：
+		類似命運，只顯示對話，使用者不需要回答問題
+		
+	特別用法，加圖片的語法：
+		題目：在 text 中使用逗號分隔，逗號左側為文字，右側為圖片路徑
+		選項：在 options 中使用分號(分隔選項)及逗號(分隔文字、圖片)
+-------------------------------------------------------------------->
+<special title="特別題:圖形題">
+	<item text="右圖是什麼動物？,images/frog.jpg" step="3" options="熊,青蛙,河馬,長頸鹿" answer="2" />
+	<item text="這個遊戲的作者是誰？" step="10" options="甲,images/frog.jpg;乙,images/2.jpg;丙,images/3.jpg;丁,images/gsyan.jpg" answer="4" />
+	<item text="右圖的性別和下面哪一個相同？,images/girl.swf" step="5" options="甲,images/gsyan.jpg;乙,images/2.jpg;丙,images/3.jpg;丁,images/1.jpg" answer="2" />	
+</special>
+
+<start title="環遊世界一周">
+	<item text="恭喜環遊世界一周，前進６格" step="6" />
+	<item text="送您回國禮，前進４格" step="4" />
+	<item text="慶祝週年慶，前進２格" step="2" />	
+</start>
+
+<fate title="命運">
+	<item text="拾金不昧，前進１格" step="1" />
+	<item text="掉到水溝，後退１格" step="-1" />
+	<item text="坐公車讓座，前進３格" step="3" />
+	<item text="努力認真，前進１格" step="1" />
+	<item text="熱心服務，前進３格" step="3" />
+</fate>
+
+<chance title="機會">
+	<item text="３X５＝？" step="2" options="5,3,12,15" answer="4" />
+	<item text="１３－５＝？" step="2" options="28,3,8,15" answer="3" />
+	<item text="國慶日是哪一天？" step="2" options="十月二十五日,十月十日,八月十五日,一月一日" answer="2" />
+	<item text="下列哪一項不是進行戶外學習時應有的態度？" step="2" options="隨時記錄,用心觀察,獨自行動,主動探索" answer="3" />
+	<item text="哪一項校園中常出現的行為容易造成危險？" step="2" options="互相禮讓,用力和同學推來擠去,遵守規定,一起維護環境安全" answer="2" />
+	<item text="下列哪一項是正確的學習態度？" step="2" options="不敢發問,上課分心,有問題隨時請教師長,功課隨便亂寫" answer="3" />
+	<item text="課餘時間若能有效運用，可以獲得什麼收穫？" step="2" options="培養興趣、專長,增廣見聞,促進身心健康,以上皆是" answer="4" />
+	<item text="課堂中有疑問時，應該怎麼辦？" step="2" options="不要發問，免得被老師罵,老師說的都對，不用問,馬上向老師發問,不管它" answer="3" />
+	<item text="在學習過程中遇到困難，可以向誰請教？" step="2" options="父母,老師,同學,以上都可以" answer="4" />
+	<item text="學習場所不限於學校，還有什麼地方也屬於學習場所？" step="2" options="文化中心,圖書館,博物館,以上皆是" answer="4" />
+	<item text="什麼是不正確的學習習慣或態度？" step="2" options="課前預習,上課專心聽講,課後複習,上課時寫作業" answer="4" />
+	<item text="下列哪一個是不良的學習環境？" step="2" options="桌椅高低適中,空氣流通,光線昏暗,安靜無噪音" answer="3" />
+	<item text="下面哪一個方法可以幫助我們在上課時集中注意力？" step="2" options="胡思亂想,邊吃東西邊上課,勤作筆記,打瞌睡" answer="3" />
+	<item text="什麼是不良的學習態度？" step="2" options="東張西望,缺乏恆心,粗心大意,以上皆是不良的學習態度" answer="4" />
+	<item text="羽柔想要認識各種海底生物，她可以到哪裡參觀？" step="2" options="各縣市政府,歷史博物館,藝術中心,海洋生態博物館" answer="4" />
+	<item text="小岡想要欣賞國內、外畫家的作品，他可以到哪裡參觀？" step="2" options="美術館,植物園,動物園,地質公園" answer="1" />
+	<item text="胖虎想要欣賞傳統的民俗戲曲表演，他可以到哪裡欣賞？" step="2" options="博物館,廟會,電子遊樂場,動物園" answer="2" />
+	<item text="下面哪一項是學習成功的第一步？" step="2" options="死背課文,消極、被動的態度,採取正確的學習習慣與態度,只看不記，只聽不想" answer="3" />
+	<item text="進行學習活動時應該讓自己保持在怎樣的情緒狀態下？" step="2" options="緊張不安,愉快,痛苦不堪,急躁" answer="2" />
+	<item text="什麼屬於學習資源？" step="2" options="社教機構,網際網路,報章雜誌,以上皆是" answer="4" />
+	<item text="學校的什麼地方，可以讓我們得到最多的課外補充資料？" step="2" options="圖書館,操場,輔導室,保健中心" answer="1" />
+	<item text="下列何者不是善用學習資源的好處？" step="2" options="可以找到人幫忙寫功課,可以增進學習效果,可以提升學習品質,可以充實自我" answer="1" />
+	<item text="下列哪一個不是學校以外的學習場所？" step="2" options="動物園,電子遊樂場,文化中心,圖書館" answer="2" />
+	<item text="想要學習第二外國語言，可以到下列哪一個場所學習？" step="2" options="博物館,海洋生態館,社教館,美術館" answer="3" />
+	<item text="上課時聽不懂老師講的內容，應該怎麼辦？" step="2" options="聽不懂就算了,考試前再想辦法,在臺下吵鬧,馬上舉手發問" answer="4" />
+	<item text="民雄覺得作文很難寫，每次都不知道該寫什麼，他可以怎麼做？" step="2" options="多看課外書,多看電視,抄同學的作文,不要寫" answer="1" />
+	<item text="下列哪一種行為不應該在上課時表現出來？" step="2" options="專心聽講,勤記重點,和隔壁同學講話,勇於發問" answer="3" />
+	<item text="我們每天到學校上課，最主要的目的是什麼？" step="2" options="可以在球場打球,跟同學聊天,可以欺負同學,學習各種知識和技能" answer="4" />
+	<item text="下列哪一項不算是良好的學習方式？" step="2" options="和同學討論問題,上課認真聽講,多思考，多發問,借同學的功課回家抄寫" answer="4" />
+	<item text="在學習上遇到困難時，我們應該怎麼做？" step="2" options="直接放棄,抄同學的答案就好,請教老師或同學,大哭大鬧" answer="3" />
+	<item text="上課前先翻閱、了解課程內容，這叫做什麼？" step="2" options="複習,預習,測驗,打發時間" answer="2" />
+	<item text="在學習上遇到困難，又沒有人可以請教時，可以用什麼方法解決？" step="2" options="不管它,查辭典等工具書,考試時再問老師就好,大哭大鬧" answer="2" />
+	<item text="老師明天要教新的課程，我可以先做什麼準備工作？" step="2" options="先把課文看過一次,把習作先寫完,整晚看電視,早點上床睡覺" answer="1" />
+	<item text="下列哪一項是升上三年級以後才有的科目？" step="2" options="國語,數學,藝術與人文,生活" answer="3" />
+	<item text="升上三年級後，課程有什麼改變？" step="2" options="學習節數減少了,學習科目變少了,學習內容的難度提高了,以上皆是" answer="3" />
+	<item text="下列敘述錯誤的是哪一項？" step="2" options="上課前應先抄同學的作業,上課時應該勤作筆記,上課後要認真複習,上課時要專心聽講" answer="1" />
+	<item text="下列哪一項不是社教機構？" step="2" options="茶園,博物館,圖書館,美術館" answer="1" />
+	<item text="下列哪一種方式比較無法增進我們的自然生態知識？" step="2" options="請相關的專家學者來演講,參觀海生館,觀察校園植物,參觀美術館" answer="4" />
+	<item text="(甲)自然與生活科技(乙)生活(丙)社會(丁)數學(戊)藝術與人文上列哪些是升上三年級才有的科目？" step="2" options="(甲)(乙),(甲)(丙)(丁),(甲)(丙)(戊),(甲)(乙)(丙)(丁)(戊)" answer="3" />
+	<item text="曉育對海洋生物非常感興趣，他可以請爸媽帶他到哪裡了解海洋生物的生態？" step="2" options="植物園,地質公園,海生館,茶園" answer="3" />
+	<item text="這週老師要同學回家閱讀一本好書，寫下讀書心得，育家可以到哪裡借閱圖書完成作業呢？" step="2" options="美術館,圖書館,海生館,書局" answer="2" />
+	<item text="小芸是三年級的學生，她的書包中不可能出現什麼課本？" step="2" options="國語課本,生活課本,數學課本,社會課本" answer="2" />
+	<item text="小玲的數學成績一直很不好，她可以向誰請教呢？" step="2" options="父母,老師,同學,以上都可以" answer="4" />
+	<item text="三年一班的同學想在園遊會上賣手工餅乾，什麼方法可以學到製作技巧呢？" step="2" options="上網查詢,翻閱食譜,請教專家,以上都可以" answer="4" />
+	<item text="香香上課作筆記時，看不懂黑板上的字，她應該怎麼辦？" step="2" options="看不懂就算了,考試前再想辦法,馬上舉手問老師,在臺下吵鬧引起老師注意" answer="3" />
+	<item text="上鄉土語言課程時，老師提到布袋戲，如果想對它有更深入的了解，惠文可以利用什麼方法學習呢？" step="2" options="上網查資料,詢問各縣市政府,參觀海生館,參觀美術館" answer="1" />
+	<item text="奇奇想在學校查詢課程相關資料，他可以到什麼地方呢？" step="2" options="校長室,圖書館,教職員辦公室,合作社" answer="2" />
+	<item text="學習成功的第一步不包含下列哪一項？" step="2" options="上課認真聽講,主動複習,勇於請教發問,抄同學的作業" answer="4" />
+	<item text="宜芳想在上課前先了解課程內容，她必須要做什麼工作？" step="2" options="預習,複習,測驗,調查" answer="1" />
+	<item text="小靜是三年級的學生，拿到課表的她發現有些二年級的科目沒有了，而被許多新的科目取代請問以下哪個科目是升上三年級的小靜已經不需要上的？" step="2" options="國語,數學,生活,社會" answer="3" />
+	<item text="花田一路平常考試都是零分，讓媽媽很頭痛，原因就是他沒有保持良好的學習態度請問以下哪一項可能是他平常的學習態度？" step="2" options="上課時勇於發問,上課時沒有專心聽講,課後認真複習,按時完成作業" answer="2" />
+	<item text="皮卡丘發現妙蛙種子常常都是班上的前三名，所以請教他如何讓成績進步，妙蛙種子告訴皮卡丘良好的學習方法是很重要的請問以下哪一項可能是妙蛙種子平常的學習方法？" step="2" options="上課時勤作筆記,平時多做評量，上課時就不用再專心聽講,時常上網打電動,擾亂班上的上課秩序" answer="1" />
+	<item text="老師說：「除了學校以外，還有許多場所也可以幫助我們學習」胖虎也想去這些地方看看，請你提醒他一下，哪一個地方不屬於良好的學習場所？" step="2" options="植物園,美術館,地質公園,電動玩具店" answer="4" />
+	<item text="下列哪一項不能用來解決學習上的困難？" step="2" options="請教相關領域的專家,閱讀相關的報章雜誌,上購物網站,實地探訪相關的學習場所" answer="3" />
+	<item text="以下是小智在學校的學習情況，哪一項不屬於良好的學習習慣或態度？" step="2" options="上課專心聽講,課前先預習,認真完成作業,上課時不舉手發問，只跟同學小聲討論" answer="4" />
+	<item text="妮妮在學習上遇到困難時，她可以利用什麼資源來解決？" step="2" options="書報,光碟,網路,以上皆是" answer="4" />
+	<item text="下列哪一個人的做法不能讓學習更有效率？" step="2" options="義君會在課前預習課程內容,大倫會做課後複習,小嘉喜歡把答案背下來,萍萍上課時專心聽講" answer="3" />
+	<item text="小雨遇到不懂的生字時，用什麼方法解決是錯誤的？" step="2" options="問老師,問同學,用小刀把字刻在桌子上，以便隨時提醒自己,查字典" answer="3" />
+	<item text="文雄升上三年級了，他會發現新課程在學習上有什麼改變？" step="2" options="需要上網查資料的機會減少了,要學會善用各種學習資源,不用再到學校以外的學習場所學習了,課業壓力減輕了" answer="2" />
+	<item text="瑜靜在上課時，發現每個同學都有不同的學習態度，她應該學習哪一位同學的學習態度，才能學得更好？" step="2" options="靜文專心聽講,怡宣和同學聊天,啟志東張西望,嘉德看漫畫書" answer="1" />
+	<item text="小昱想蒐集有關歷史人物的資料，請問下列哪一種方法不適當？" step="2" options="和同學討論,上網查資料,訪問專家學者,多看電視綜藝節目" answer="4" />
+	<item text="為了查詢課程相關資料，李大年到圖書館閱讀書籍，下列哪一項行為是正確的？" step="2" options="看到重點內容時，直接在書上做記號,將內容大聲念出來,看完後將書本放回原位,看到需要的資料時，將資料剪下來帶回家" answer="3" />
+	<item text="小芳想了解龍鬚糖的製作方法，她可以透過哪一種方式獲得相關知識？" step="2" options="填問卷,請教專家,多聽音樂,問弟弟、妹妹" answer="2" />
+	<item text="小新國小邀請歌仔戲團到學校表演，可以使學生得到什麼收穫？" step="2" options="增加學習機會,養成閱讀習慣,增加體力,考試得高分" answer="1" />
+	<item text="上課時，小純對老師的講解有疑問，她應該怎麼辦？" step="2" options="不要聽了，做自己的事,回家自己翻書,馬上舉手問老師,傳紙條問同學" answer="3" />
+	<item text="虹玉上課容易分心，下面哪一個方法可以幫助她集中注意力？" step="2" options="做白日夢,上課時和同學傳字條,勤作筆記,打瞌睡" answer="3" />
+	<item text="潔柔想要認識臺灣的歷史文化，她可以到哪裡參觀？" step="2" options="地質公園,歷史博物館,植物園,自然生態保育區" answer="2" />
+	<item text="慧文發現升上三年級後有了新的科目，請問下列哪一科是新的科目？" step="2" options="國語,數學,社會,生活" answer="3" />
+	<item text="上新課程前，真真可以先做什麼準備工作？" step="2" options="先把課文看過一次,蒐集相關資料,試著了解新課程的內容,以上皆是" answer="4" />	
+</chance>
+</xml>
