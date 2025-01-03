@@ -1,0 +1,15 @@
+﻿&font=標楷體&
+&color=0x009900&
+&sound_enabled=1&
+&background_image=photo_from_nanchris11.jpg&
+&message=背景取自南老師的華語玩樂園&
+&message_url=http://blog.huayuworld.org/nanchris11/19297/2010/08/09/70048&
+&countdown=30&
+&cards=
+大家,50
+好
+我,50
+是
+帥哥,100
+雄,100
+&

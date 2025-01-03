@@ -1,0 +1,47 @@
+﻿<center>
+<object align="middle"  width="550" height="400" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" id="flashcard">
+  <param name="quality" value="high" />
+  <param name="menu" value="false" />
+  <param name="allowFullScreen" value="true" />
+  <param name="movie" value="http://blog.huayuworld.org/gallery/12082/flashcard.swf" />
+  <param name="flashvars" 
+         value="
+&font=標楷體&
+&color=0x009900&
+&background_image=http://blog.huayuworld.org/gallery/10235/_DSC0567.jpg&
+&countdown=30&
+&message=背景取自南老師的華語玩樂園&
+&message_url=http://blog.huayuworld.org/nanchris11/19297/2010/08/09/70048&
+&cards=
+大家,100
+好
+我,50
+是,60
+帥哥,100
+雄,100
+&
+" />
+
+  <embed src="http://blog.huayuworld.org/gallery/12082/flashcard.swf"
+    width="550" height="400" quality="high" allowFullScreen="true"  
+    flashvars="
+&font=標楷體&
+&color=0x009900&
+&background_image=http://blog.huayuworld.org/gallery/10235/_DSC0567.jpg&
+&countdown=30&
+&message=背景取自南老師的華語玩樂園&
+&message_url=http://blog.huayuworld.org/nanchris11/19297/2010/08/09/70048&
+&cards=
+大家,100
+好
+我,50
+是,60
+帥哥,100
+雄,100
+&
+" 
+ pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"></embed>
+</object>
+<br />
+<p>以上背景取自 <a href="http://blog.huayuworld.org/nanchris11/19297/2010/08/09/70048">南老師的華語玩樂園</a></p>
+</center>

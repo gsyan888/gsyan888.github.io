@@ -1,0 +1,13 @@
+﻿&seperator=,&
+&auto_replace_answer=yes&
+&question_lines=
+他倆相識二十年，早成莫逆之交。,莫逆之交
+為人處事必須是非分明，不可同流合汙。,同流合汙
+古聖先賢遺留下來的()，是後世為人行事的規範。,金科玉律
+990＋100＝？,1090
+990＋()＝1000,10
+samples/cat.png,CAT
+samples/dog.mp3,小狗
+samples/cow.mp3,samples/cow.png
+&
+

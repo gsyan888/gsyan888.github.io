@@ -1,0 +1,7 @@
+﻿&menuCount=6&datafolder=data&title=ㄌㄧㄤˋ量 ㄘˊ詞 ㄉㄚˋ大 ㄊㄧㄠˇ挑 ㄓㄢˋ戰&
+&menu1=量詞找名詞生手級,b01-1.txt&
+&menu2=量詞找名詞入門級,b01-2.txt&
+&menu3=量詞找名詞高手級,b01-3.txt&
+&menu4=名詞找量詞生手級,b02-1.txt&
+&menu5=名詞找量詞入門級,b02-2.txt&
+&menu6=名詞找量詞高手級,b02-3.txt&
