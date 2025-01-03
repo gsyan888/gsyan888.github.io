@@ -1,0 +1,10 @@
+﻿&title=五子棋&
+&font=標楷體&
+&fontsize=28&
+&boxwidth=40&
+&random=1&
+&timer=30&
+&showNumber=0&
+&col=12&
+&row=11&
+&txt=五子棋則咸信是流傳於古中國的傳統棋種之一至今仍在民間廣泛流傳規則相當簡單以上的文字來自於維基百科&

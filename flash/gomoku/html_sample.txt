@@ -1,0 +1,68 @@
+生字五子棋(三下國語第十課)<br />
+<object align="middle" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" id="spelling" width="550" height="412">
+  <param name="quality" value="high" />
+  <param name="menu" value="false" />
+  <param name="allowFullScreen" value="true" />
+  <param name="movie" value="http://mail.lsps.tp.edu.tw/~gsyan/works/flash/gomoku/gomoku.swf" />
+  <param name="flashvars" 
+value="
+&font=標楷體&
+&fontsize=31&
+&boxwidth=72&
+&random=1&
+&timer=0&
+&showNumber=1&
+&col=9&
+&row=6&
+&txt=
+一封
+道歉
+鉛筆盒
+承認
+摔壞
+查問
+趁機
+偷偷的
+聲響
+竟然
+摔破
+指責
+昨天
+賠你
+誠心
+原諒
+&">
+
+  <embed src="http://mail.lsps.tp.edu.tw/~gsyan/works/flash/gomoku/gomoku.swf"
+    width="550" height="412" quality="high" allowFullScreen="true"  
+flashvars="
+&font=標楷體&
+&fontsize=31&
+&boxwidth=72&
+&random=1&
+&showNumber=1&
+&timer=0&
+&col=9&
+&row=6&
+&txt=
+一封
+道歉
+鉛筆盒
+承認
+摔壞
+查問
+趁機
+偷偷的
+聲響
+竟然
+摔破
+指責
+昨天
+賠你
+誠心
+原諒
+&" 
+ pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"></embed>
+</object>
+<br />
+<p align="right">↑<br />按一下右下角的小三角可以出現工具放大為全螢幕</p>

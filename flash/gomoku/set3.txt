@@ -1,0 +1,10 @@
+﻿&title=五子棋&
+&font=標楷體&
+&fontsize=32&
+&boxwidth=100&
+&random=1&
+&timer=30&
+&showNumber=1&
+&col=4&
+&row=4&
+&txt=封歉盒承壞查趁偷響竟破責昨賠誠諒&
