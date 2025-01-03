@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageSelector>
+<settings images_folder="images" />
+<settings repeat="no" />
+<settings show="10" />
+<settings sleep="0" />
+<images>
+	<img src="autumn.jpg" />
+	<img src="fall_eaves.jpg" />
+	<img src="fighter_plane.jpg" />
+	<img src="flowers.jpg" />
+	<img src="lotus_flower.jpg" />
+	<img src="munich_waterfront.jpg" />
+</images>
+</ImageSelector>

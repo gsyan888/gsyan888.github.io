@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+====註解開始
+	*********************************************************
+	**** 本設定檔儲存時, 別忘了要儲存為 utf-8 的編碼方式 ****
+	*********************************************************
+	
+	*********************************************************
+	settings 可用的屬性如下:
+	*********************************************************
+	
+	images_folder:	圖片儲存的資料夾名稱
+	repeat:	抽過的圖片是否可再抽 ( no , yes )
+	sleep:	展示圖片時, 每張之間停頓的時間長短
+	
+	**********************************************************
+	images 可用的屬性如下:
+	**********************************************************
+	
+	id :	識別用
+	widht:	區塊中圖片的預設寬度
+	hieght:	區塊中圖片的預設高度
+	x:		圖片左上角的 x 座標
+	y:		圖片左上角的 y 座標
+	title:	是否在上面加上標題文字, 空字串( "" ) 表示不加
+	color:	標題字的顏色代碼(RGB), 白( 0xffffff ), 紅( 0xff0000 ) ...
+	font:	標題字的字型大小
+	align:	標題字的對齊方式( left, right, top, bottom )
+	
+	img 可用的屬性如下:
+	src: 	圖片的檔名
+	text:	文字
+	sound:	聲音檔路徑	
+====註解結束	
+-->
+<ImageSelector>
+  <settings images_folder="images" />
+  <settings repeat="no" />
+  <settings show="10" />
+  <settings sleep="0" />
+
+  <images id="images1" width="400" height="300" x="15" y="15" title="" color="0xff0000" font="120" align="center">
+	<img src="autumn.jpg" text="秋天" />
+	<img src="winter.jpg" text="冬天" />
+	<img src="dog.jpg" text="狗" sound="sound/dog.mp3" />
+	<img src="frog.jpg" text="青蛙" />	
+  </images>	
+</ImageSelector>

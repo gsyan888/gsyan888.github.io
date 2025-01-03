@@ -1,0 +1,36 @@
+﻿&title=Mask Text&
+&vertical=yes&
+&button_random_visible=yes&
+&button_random_next_visible=yes&
+&button_next_visible=yes&
+&first_line_random=no&
+&font_color_normal=0xffffff&
+&font_color_mask=0xffff00&
+&fontsize=50&
+&random_ratio=50&
+&symbol=，，、。；．？！︰「」『』…～＄％＠＆＃＊‧【】《》（）＜＞◎○●⊕⊙△▲☆★◇◆□&
+&context=
+王之渙‧登鸛雀樓
+{白日}依山盡，
+黃河{入海}流。
+欲窮{千里}目，
+更上一層樓。
+
+王維‧送別
+下馬{飲君酒}，
+問君{何}所之？
+君言{不得意}，
+歸臥{南山陲}。
+但去{莫}復聞，
+{白雲}無盡時。
+
+
+杜牧‧秋夕
+銀燭秋光{冷畫屏}，
+輕羅{小扇}撲流螢。
+天階{夜色}涼如水，
+臥看{牽牛織女}星。
+
+ㄑㄧㄥ青 ㄕㄢ山 {ㄧㄣˇ隱 ㄧㄣˇ隱} ㄕㄨㄟˇ水 ㄊㄧㄠˊ迢 ㄊㄧㄠˊ迢
+{ㄑㄧㄡ秋 ㄐㄧㄣˋ盡} ㄐㄧㄤ江 ㄋㄢˊ南 ㄘㄠˇ草 ㄨㄟˋ未 ㄉㄧㄠ凋
+&
