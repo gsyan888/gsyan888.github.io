@@ -1,0 +1,2 @@
+&imagesFolder=images&
+&soundFolder=mp3&
