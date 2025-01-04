@@ -1,0 +1,12 @@
+﻿&title=注音高手&
+&phonetics_table_filename=phonetab.txt&
+&--拼音就改用這個--phonetics_table_filename=pinyintab.txt&
+&show_character=yes&
+&character_select_enabled=yes&
+&filename_escape=yes&
+&random_order_enabled=yes&
+&questions_to_answer=10&
+&data_folder_name=data&
+&script_filename=list.bat&
+&file_list_load_delay=1&
+&file_list=list.txt&
