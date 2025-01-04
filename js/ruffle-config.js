@@ -2,7 +2,7 @@
 window.RufflePlayer = window.RufflePlayer || {};
 
 //right click or long press in touch mode tigger menu show
-window.RufflePlayer.config.contextMenu = true;
+window.RufflePlayer.config.contextMenu = 'on';
 
 //optons for loading fonts and set default fonts (Chinese fonts)
 window.RufflePlayer.config.fontSources = ["https://gsyan888.github.io/fonts/Iansui-Regular.ttf"];
