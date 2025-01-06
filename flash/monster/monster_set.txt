@@ -1,0 +1,6 @@
+﻿&title=ㄘˊ詞 ㄩˇ語 ㄉㄚˋ大 ㄊㄧㄠˇ挑 ㄓㄢˋ戰&
+&datafolder=monster_data&
+&menu_lines=
+心緒類語詞:初級篇,basic.txt
+心緒類語詞:高級篇,advance.txt
+&
