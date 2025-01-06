@@ -1,0 +1,1317 @@
+﻿&input_method=pinyin&
+&myTitle=拼音小鍵盤&
+&resultFont=標楷體,28&
+&inputFont=標楷體,24&
+&keyFont=標楷體,40&
+&tab=， ， 、 。 ； ． ？ ！ ︰ 「 」 『 』 … ～ ＄ ％ ＠ ＆ ＃ ＊ ‧ 【 】 《 》 （ ） ＜ ＞ ◎ ○ ● ⊕ ⊙ △ ▲ ☆ ★ ◇ ◆ □
+a1 阿 ㄚ 啊
+a4 阿
+a5 啊
+ai1 唉 哀 埃 挨 哎 ㄞ
+ai2 捱 呆 癌 皚
+ai3 矮 藹 靄 欸 毐
+ai4 愛 礙 艾 曖 璦 隘 噯 嬡
+an1 安 鞍 庵 諳 氨 銨 ㄢ 鵪 桉 盦
+an3 俺 唵
+an4 案 按 暗 岸 黯 闇 犴
+ang1 骯 ㄤ
+ang2 昂
+ang4 盎
+ao1 凹 坳 ㄠ
+ao2 熬 敖 遨 翱 嗷 螯 鰲 鼇 驁 獒
+ao3 襖 拗 媼
+ao4 傲 澳 奧 懊 坳 拗
+b1 ㄅ
+ba1 八 巴 捌 疤 芭 笆 粑 叭 朳 吧 罷
+ba2 拔 跋 鈸
+ba3 把 靶
+ba4 爸 罷 霸 壩 灞 耙
+ba5 吧 罷
+bai1 掰
+bai2 白
+bai3 百 佰 擺 襬 柏
+bai4 敗 拜
+ban1 般 搬 班 斑 頒 扳 攽
+ban3 板 版 闆 阪 舨
+ban4 半 辦 伴 扮 拌 絆 瓣 爿
+bang1 幫 邦 梆
+bang3 榜 綁 膀
+bang4 棒 磅 謗 蚌 傍 鎊 £
+bao1 包 胞 苞 褒 煲
+bao2 薄 雹
+bao3 保 寶 飽 堡 褓 葆 鴇
+bao4 報 抱 暴 爆 豹 趵 鮑 刨 菢
+bei1 悲 杯 卑 碑 俾 揹 盃 背 唄
+bei3 北
+bei4 被 備 背 貝 輩 倍 臂 狽 憊 悖 孛 焙 蓓
+bei5 唄
+ben1 奔 賁 錛
+ben3 本 苯 畚
+ben4 笨
+beng1 崩 繃
+beng2 甭
+beng4 蹦 迸
+bi1 逼
+bi2 鼻
+bi3 比 筆 彼 鄙 匕 秕 妣
+bi4 必 敝 畢 壁 璧 碧 避 閉 幣 弊 斃 蔽 臂 泌 婢 俾 庇 嗶 愎 辟 弼 裨 陛 篦 畀 嬖 睥 襞 篳 蹕 髀 痺 毖
+bian1 邊 編 鞭 蝙 砭
+bian3 扁 貶 匾
+bian4 便 變 遍 辨 辯 汴 卞 辮 弁
+biao1 標 彪 鑣 鏢 飆 膘
+biao3 表 錶 婊 裱
+biao4 鰾
+bie1 憋 鱉 癟
+bie2 別 蹩
+bie3 癟
+bie4 彆
+bin1 賓 濱 繽 瀕 檳 斌 彬 儐 豳
+bin4 殯 鬢 擯 髕
+bing1 冰 兵
+bing3 餅 丙 稟 柄 秉 炳 昺
+bing4 並 病 併 并 摒
+bo1 波 玻 撥 剝 菠 缽 ㄅ
+bo2 伯 博 柏 泊 勃 搏 渤 駁 薄 礡 脖 帛 舶 箔 蔔 膊 鈸 餑 鉑 鵓 踣 亳
+bo3 跛 簸
+bo4 播 擘 簸 薄
+bu1 逋 晡
+bu3 補 捕 埔 哺 堡 卜
+bu4 不 部 布 步 怖 佈 簿 埠
+c1 ㄘ
+ca1 擦
+cai1 猜
+cai2 才 財 材 裁
+cai3 採 彩 采 睬 踩 綵
+cai4 菜 蔡 埰
+can1 參 餐 驂
+can2 殘 蠶 慚
+can3 慘
+can4 燦 孱 璨 粲
+cang1 蒼 倉 滄 艙
+cang2 藏
+cao1 操 糙
+cao2 曹 槽 嘈 漕 螬 艚
+cao3 草 艸
+cao4 操 肏
+ce4 冊 策 測 側 廁 惻
+cen1 參
+cen2 岑 涔
+ceng1 噌
+ceng2 曾 層 嶒
+ceng4 蹭
+cha1 差 插 叉 喳 杈
+cha2 查 察 茶 搽 槎
+cha4 詫 岔 剎 差 汊 衩
+chai1 拆 釵 差
+chai2 柴 豺 儕
+chai4 蠆
+chan1 攙
+chan2 纏 蟬 禪 饞 讒 潺 蟾 巉 嬋 澶 廛 孱 鑱
+chan3 產 鏟 闡 剷 諂
+chan4 懺
+chang1 昌 倡 猖 娼 菖 倀
+chang2 長 常 場 嘗 裳 償 腸 嫦 徜 嚐
+chang3 場 廠 敞 氅 昶
+chang4 唱 倡 暢 悵 鬯
+chao1 抄 鈔 超 勦 怊 剿
+chao2 朝 潮 巢 嘲 晁
+chao3 吵 炒
+che1 車
+che3 扯
+che4 徹 澈 轍 撤 掣 坼
+chen1 嗔 琛 瞋 郴
+chen2 陳 沉 晨 臣 塵 辰 忱 諶
+chen3 磣
+chen4 趁 襯 讖
+cheng1 稱 撐 瞠 蟶 琤
+cheng2 成 程 承 乘 誠 呈 城 懲 澄 橙 丞 澂 酲 晟 裎 埕
+cheng3 逞 騁
+cheng4 稱 秤
+ch1 ㄔ
+chi1 吃 蚩 癡 痴 嗤 喫 ㄔ 魑 笞 鴟 媸 眵
+chi2 持 池 遲 馳 匙 弛 踟 墀
+chi3 尺 齒 恥 呎 侈 褫 豉
+chi4 赤 翅 斥 飭 叱 熾 啻 敕 彳
+chong1 充 衝 沖 涌 舂 忡 憧 翀
+chong2 重 崇 蟲 虫
+chong3 寵
+chong4 銃
+chou1 抽
+chou2 愁 仇 籌 綢 酬 稠 紬 躊 疇 惆 裯 儔 讎
+chou3 丑 醜 瞅
+chou4 臭
+chu1 出 初 齣
+chu2 除 儲 廚 鋤 櫥 雛 芻 躇 滁 躕 蜍 鉏 鶵
+chu3 處 楚 儲 礎 杵 褚 楮
+chu4 處 觸 畜 搐 絀 矗 黜 俶 怵
+chuai1 揣
+chuai3 揣
+chuai4 踹
+chuan1 穿 川
+chuan2 傳 船 遄 椽
+chuan3 喘
+chuan4 串 釧
+chuang1 窗 創 瘡 囪
+chuang2 床 幢
+chuang3 闖
+chuang4 創 闖 愴
+chui1 吹 炊
+chui2 垂 鎚 槌 搥 椎 陲 錘 捶 棰
+chun1 春 椿
+chun2 純 唇 醇 淳 鶉 脣
+chun3 蠢
+chuo1 戳
+chuo4 綽 輟 齪 啜 惙 醊
+ci1 疵 雌 ㄘ 差
+ci2 詞 辭 慈 磁 瓷 雌 祠 茨 餈
+ci3 此 泚
+ci4 次 刺 賜 廁 伺
+cong1 匆 聰 從 囪
+cong2 從 叢 淙 琮
+cou4 湊
+cu1 粗
+cu2 殂 徂
+cu4 促 醋 簇 蹴 蹙 猝 鏃 踧
+cuan1 攛 躥
+cuan2 攢
+cuan4 竄 篡 爨 篹
+cui1 摧 催 崔 榱 衰
+cui3 璀
+cui4 翠 脆 粹 悴 瘁 萃 啐 淬 橇
+cun1 村
+cun2 存
+cun3 忖
+cun4 寸 吋
+cuo1 搓 撮 磋 蹉
+cuo2 嵯
+cuo4 錯 措 挫 銼 厝
+d1 ㄉ 的
+ddd1 、
+d5 的
+da1 搭 答 咑
+da2 答 達 韃 靼 瘩 怛 妲 笪
+da3 打
+da4 大
+dai1 呆 獃
+dai3 歹 逮
+dai4 代 帶 待 袋 戴 怠 殆 黛 貸 迨 玳 岱 逮
+dan1 單 擔 丹 耽 簞 鄲 眈 聃 酖 儋
+dan3 膽 疸 撢 亶
+dan4 但 旦 淡 蛋 誕 擔 彈 憚 氮 啖 澹
+dang1 當 噹 鐺 襠
+dang3 擋 黨 讜
+dang4 檔 當 蕩 盪 擋 宕
+dao1 刀 叨 忉
+dao3 倒 島 導 禱 搗
+dao4 到 道 倒 稻 盜 蹈 悼 纛
+dd1 ，
+de1 ㄉ 得 的 地 底
+de2 得 德
+de5 得 的 地 底
+dei3 得
+deng1 登 燈 簦
+deng3 等 戥
+deng4 鄧 瞪 蹬 凳 磴
+di1 低 滴 堤 隄 提 氐 羝
+di2 的 敵 迪 狄 笛 滌 翟 荻 嘀 鏑 蹢 糴
+di3 底 抵 邸 詆 牴 砥 氐 柢
+di4 地 第 弟 帝 遞 蒂 的 締 諦 娣 睇 棣
+dian1 顛 巔 癲 滇 掂
+dian3 點 典 碘
+dian4 電 店 殿 甸 奠 墊 澱 惦 癜 靛 佃 淀 玷 鈿
+diao1 雕 凋 刁 貂 鵰 碉 叼 彫
+diao3 屌
+diao4 調 掉 釣 吊 弔 蓧
+die1 爹 跌
+die2 碟 蝶 諜 疊 迭 牒 喋 瓞 咥 垤 蹀
+ding1 丁 釘 叮 疔 酊 盯 仃
+ding3 頂 鼎 酊
+ding4 定 訂 釘 錠 碇
+diu1 丟
+dong1 東 冬 咚 鼕
+dong3 懂 董
+dong4 動 洞 凍 棟 恫 胴
+dou1 都 兜
+dou3 斗 抖 陡 蚪 枓
+dou4 鬥 豆 荳 逗 痘 竇 餖 讀
+du1 都 督 嘟
+du2 讀 獨 毒 牘 纛 瀆 犢 黷
+du3 賭 睹 篤 堵 肚
+du4 度 渡 杜 妒 肚 鍍 蠹 ℃ ° ℉
+duan1 端 耑
+duan3 短
+duan4 段 斷 緞 鍛
+dui1 堆
+dui4 對 隊 兌 懟
+dun1 敦 蹲 墩 惇 礅 噸
+dun3 盹 躉
+dun4 頓 盾 鈍 遁 盹 燉 沌 、 炖
+duo1 多 哆 咄 剟 掇 裰
+duo2 奪 度 踱 鐸
+duo3 躲 朵 埵 垛
+duo4 惰 墮 舵 跺 剁 馱 垛
+e1 阿 婀 痾 欸 ㄜ ㄝ 屙
+e2 額 訛 鵝 娥 哦 蛾 峨 莪 俄 惡
+e3 欸
+e4 惡 餓 厄 遏 扼 鱷 顎 呃 愕 噩 軛 鄂 鍔 鶚 諤 萼 頞
+ei1 欸 ㄟ
+ei3 欸
+ei4 欸
+en1 恩 奀 ㄣ
+en4 摁
+eng1 ㄥ
+er1 ㄦ
+er2 而 兒
+er3 爾 耳 洱 餌 邇
+er4 二 貳 佴
+f1 ㄈ
+fa1 發
+fa2 乏 伐 罰 閥 筏 砝
+fa3 法
+fa4 髮 法 琺
+fan1 番 翻 蕃 繙 幡 帆
+fan2 凡 煩 繁 帆 蕃 礬 藩 樊 膰
+fan3 反 返
+fan4 範 范 犯 氾 汎 飯 販 泛 梵 畈
+fang1 方 芳 坊 枋 □
+fang2 房 防 妨 肪 坊
+fang3 訪 彷 仿 紡 倣 舫 昉 髣
+fang4 放
+fei1 非 飛 菲 扉 啡 妃 緋 霏
+fei2 肥 淝 腓
+fei3 匪 翡 斐 蜚 誹 悱 菲 榧
+fei4 廢 費 肺 沸 吠 痱 怫 芾 狒 剕
+fen1 分 紛 芬 氛 吩 棻
+fen2 墳 焚 汾 棼 濆
+fen3 粉
+fen4 份 忿 奮 憤 分 糞
+feng1 風 蜂 封 豐 瘋 峰 鋒 丰 烽 楓 酆 葑 灃
+feng2 逢 縫 馮
+feng3 諷
+feng4 奉 鳳 俸 諷 縫
+fo1 ㄈ
+fo2 佛
+fou3 否 缶
+fu1 夫 膚 敷 孵 伕 麩 跗
+fu2 服 福 扶 浮 符 伏 彿 幅 俘 拂 弗 孚 袱 芙 苻 輻 蝠 匐 怫 茯 蜉 氟
+fu3 府 腐 撫 輔 甫 斧 俯 釜 脯 腑 拊
+fu4 父 負 婦 付 附 富 復 副 傅 覆 複 腹 咐 赴 賦 縛 駙 訃 阜 馥
+g1 ㄍ
+ga1 嘎 旮 咖
+ga2 軋 噶
+ga3 嘎
+ga4 尬
+gai1 該 垓 賅
+gai3 改
+gai4 概 蓋 丐 鈣 溉
+gan1 乾 甘 干 竿 肝 尷 柑 泔 疳 杆
+gan3 敢 感 趕 桿 橄 稈 澉
+gan4 幹 贛 淦 紺 榦
+gang1 剛 鋼 缸 崗 綱 岡 肛 扛 罡
+gang3 港 崗
+gang4 鋼 槓
+gao1 高 糕 膏 篙 羔 睾 皋
+gao3 稿 攪 搞 槁 縞 杲
+gao4 告 誥 郜
+ge1 哥 歌 割 鴿 擱 胳 戈 疙 咯 ㄍ 個
+ge2 格 革 隔 閣 葛 骼 蛤 膈 嗝 □ 轕 閤 鎘
+ge3 葛 舸
+ge4 各 個 鉻 箇
+ge5 個
+gei3 給
+gen1 跟 根
+gen3 艮
+gen4 亙 艮
+geng1 更 耕 庚 羹 賡 鶊
+geng3 梗 耿 哽 綆 鯁 埂 骾
+geng4 更
+gong1 工 公 功 供 攻 宮 恭 躬 弓 蚣 龔 肱 觥
+gong3 鞏 拱 汞 栱
+gong4 共 供 貢
+gou1 溝 勾 鉤 句
+gou3 狗 茍 岣 枸
+gou4 夠 購 垢 構 媾 彀 搆 詬
+gu1 姑 孤 辜 咕 沽 估 菇 菰 呱 蛄 箍 鴣 觚 酤
+gu2 骨
+gu3 股 古 鼓 骨 谷 穀 賈 蠱 牯 罟 詁 轂 鵠 瞽 汨 鈷
+gu4 故 固 顧 雇 僱 錮 估 痼 梏
+gua1 瓜 括 刮 颳 呱
+gua3 寡 剮
+gua4 掛 卦 褂 挂
+guai1 乖
+guai3 拐 枴
+guai4 怪
+guan1 官 關 觀 冠 棺 矜 鰥 綸 倌 莞
+guan3 管 館 莞 琯
+guan4 觀 慣 貫 冠 灌 罐 摜 盥 鸛
+guang1 光 胱 洸 桄
+guang3 廣 獷
+guang4 逛
+gui1 歸 規 龜 瑰 閨 圭 珪 皈 傀 鮭 瑰
+gui3 鬼 軌 詭 癸 晷 簋
+gui4 貴 桂 櫃 劊 檜 柜 跪 劌 鱖
+gui5 瑰
+gun3 滾 袞 鯀
+gun4 棍
+guo1 郭 鍋 聒 嘓
+guo2 國 幗 虢 摑
+guo3 果 裹 槨 蜾
+guo4 過
+h1 ㄏ
+ha1 哈
+ha2 蛤
+ha3 哈
+ha4 哈
+hai1 咳 嗨
+hai2 還 孩 骸 頦
+hai3 海 醢
+hai4 害 亥 駭 氦 嗐
+han1 酣 鼾 蚶 憨 頇
+han2 寒 含 函 涵 韓 邯 汗 邗
+han3 喊 罕
+han4 漢 汗 旱 焊 憾 翰 撼 悍 頷 瀚 捍
+hang2 行 航 杭 吭
+hang4 巷 沆
+hao1 蒿 嚆
+hao2 號 毫 豪 壕 濠 蠔 貉 嚎 嗥
+hao3 好 郝
+hao4 號 耗 浩 皓 鎬 昊 好 灝 顥 鄗 皞
+he1 喝 呵 訶 ㄏ
+he2 和 合 何 河 荷 核 盒 禾 褐 劾 闔 閤 曷 龢 涸 盍 覈 貉 閡 紇 翮 鞨
+he4 賀 和 鶴 喝 荷 嚇 赫 壑
+hei1 黑 嘿
+hen2 痕
+hen3 很 狠
+hen4 恨
+heng1 亨 哼 脝
+heng2 橫 恆 衡 珩 蘅 桁 姮
+heng4 橫
+hng1 哼
+hong1 轟 哄 烘 薨 訇
+hong2 紅 洪 宏 鴻 虹 弘 泓 訌 閎 黌 竑
+hong3 哄
+hong4 鬨 蕻
+hou2 猴 侯 喉 篌 餱
+hou3 吼
+hou4 後 候 厚 后 鱟 垕 逅
+hu1 忽 呼 乎 惚
+hu2 胡 湖 壺 蝴 糊 狐 弧 葫 鬍 瑚 餬 斛 鵠 囫 縠 觳 猢
+hu3 虎 琥 滸 唬
+hu4 護 戶 互 滬 扈 瓠 怙 祜 笏 岵
+hua1 花 華 嘩
+hua2 華 滑 划 譁 猾 嘩 驊 鏵
+hua4 話 化 畫 劃 樺 華
+huai2 懷 淮 徊 槐 踝
+huai4 壞
+huan1 歡 驩 獾 懽
+huan2 還 環 桓 繯 鬟 鍰 鐶 寰
+huan3 緩
+huan4 換 喚 宦 患 幻 煥 奐 渙 瘓 豢 鯇 擐 漶
+huang1 荒 慌 肓
+huang2 黃 徨 惶 簧 璜 磺 蝗 煌 皇 凰 遑 隍 潢 篁 喤 艎 蟥
+huang3 謊 恍 晃 幌
+huang4 晃
+hui1 灰 揮 輝 恢 詼 暉 麾 徽 隳 琿
+hui2 回 迴 蛔 茴 洄
+hui3 悔 毀 燬 譭
+hui4 會 惠 匯 繪 慧 彙 穢 誨 賄 晦 彗 諱 潰 卉 蕙 檜 燴 喙 薈 蟪
+hun1 婚 昏 葷 閽 惛
+hun2 魂 渾 餛 混 琿
+hun4 混 渾 溷 諢
+huo1 豁
+huo2 活
+huo3 火 伙 夥
+huo4 或 穫 獲 和 惑 禍 霍 貨 豁 壑 蠖 鑊 藿
+i1 ㄧ 〡
+j1 ㄐ
+ji1 機 基 積 績 蹟 激 跡 姬 雞 饑 肌 稽 飢 緝 畸 箕 譏 磯 羈 畿 嵇 几 嘰 屐 璣 圾 躋 乩 唧 勣 犄 剞 机 ㄐ
+ji2 及 級 極 即 集 急 擊 疾 籍 藉 吉 寂 輯 脊 嫉 亟 棘 汲 瘠 楫 岌 笈 戢 殛 蹐 伋 蒺 佶 詰 踖
+ji3 幾 給 己 紀 擠 脊 戟 濟 掎
+ji4 記 既 計 紀 際 繼 季 寄 技 妓 濟 劑 繫 悸 祭 忌 暨 冀 鯽 稷 薺 驥 霽 薊 髻 覬 伎 洎 跽
+jia1 家 加 嘉 佳 傢 迦 枷 痂 笳 茄 袈 珈 葭 鎵 夾 嗧
+jia2 夾 挾 頰 蛺 戛 鋏
+jia3 假 甲 賈 鉀 岬 胛
+jia4 價 假 架 駕 嫁 稼
+jian1 間 監 堅 尖 兼 肩 艱 奸 姦 煎 緘 漸 箋 殲 菅 鞬 牋 縑 湔 蒹 鶼 犍 櫼 搛
+jian3 簡 撿 檢 剪 減 揀 繭 儉 鹼 柬 筧 翦 謇 蹇 譾
+jian4 見 建 健 件 間 監 鍵 鑑 箭 劍 艦 鑒 賤 踐 諫 毽 薦 餞 腱 濺 僭 檻 漸 澗 荐 → ↑ ↓ ←
+jiang1 將 江 疆 僵 薑 殭 韁 姜 漿
+jiang3 講 獎 蔣 槳
+jiang4 降 匠 醬 將 絳 糨
+jiao1 交 教 膠 驕 焦 嬌 郊 跤 澆 蛟 蕉 礁 椒 茭 姣
+jiao2 嚼
+jiao3 腳 角 繳 攪 勦 矯 絞 佼 餃 皎 僥 剿 鉸 狡 撟
+jiao4 教 叫 校 較 覺 轎 窖 醮 徼 斠 滘
+jie1 街 接 皆 階 揭 偕 嗟 楬 結 癤
+jie2 結 節 潔 傑 捷 竭 劫 截 杰 頡 詰 桀 睫 訐 拮 羯 桔 孑 絜 偈 婕 碣
+jie3 解 姐
+jie4 界 借 介 戒 藉 屆 疥 芥 誡 解 唶 玠 蚧 价
+jin1 今 金 禁 津 斤 巾 筋 襟 矜 衿 觔
+jin3 緊 僅 錦 謹 儘 瑾 饉 巹
+jin4 進 近 盡 禁 晉 浸 勁 覲 燼 噤 妗 靳 縉 搢 殣
+jing1 經 精 京 驚 睛 莖 晶 菁 兢 涇 鯨 荊 旌 粳
+jing3 景 警 井 頸 阱 儆 璟 憬 剄
+jing4 敬 竟 鏡 靜 境 淨 競 逕 徑 靖 勁 脛 痙 靚
+jiong1 坰
+jiong3 窘 迥 炯 炅 絅 冏 熲
+jiu1 糾 揪 啾 鳩 轇
+jiu3 九 久 酒 玖 赳 灸 韭 糾
+jiu4 就 究 救 舊 舅 臼 柩 疚 咎 鷲 廄 僦
+jj1 。
+ju1 居 拘 駒 疽 狙 車 据 琚 雎
+ju2 局 鞠 菊 橘 掬 跼 桔 鞫 侷 焗
+ju3 舉 矩 咀 莒 沮 齟 櫸 筥 踽
+ju4 據 句 具 巨 劇 聚 俱 拒 距 鋸 懼 鉅 炬 詎 遽 倨 瞿 踞 颶 苣 屨 醵
+juan1 捐 娟 鵑 涓 鐫 圈 蠲 朘
+juan3 捲
+juan4 卷 倦 眷 絹 雋 狷
+jue1 噘 嗟 撅
+jue2 決 覺 絕 角 爵 掘 嚼 訣 厥 獗 蹶 蕨 崛 攫 倔 抉 噱 矍 孓 玨 橛 爝 譎 鐍
+jue3 蹶
+jue4 倔
+jun1 軍 君 均 鈞 麇 皸 莙 菌
+jun4 菌 郡 俊 峻 竣 雋 濬 駿 浚 珺 畯
+k1 ㄎ
+[1 （ 【 ｛ 〔 ︵ ︻ ︷ ︹
+]1 ） 】 ｝ 〕 ︶ ︼ ︸ ︺
+ka1 咖 喀
+ka3 卡 咭 咯
+kai1 開 揩
+kai3 凱 楷 慨 愷 剴 鎧 闓 鍇
+kai4 愾 欬
+kan1 刊 堪 勘 戡 看 龕
+kan3 砍 侃 坎 檻
+kan4 看 瞰 勘 崁 闞 磡 墈
+kang1 康 慷 糠
+kang2 扛
+kang3 慷
+kang4 抗 亢 炕 伉
+kao3 考 烤 拷 栲 攷
+kao4 靠 銬 犒
+ke1 科 棵 顆 柯 苛 瞌 磕 蝌 軻 稞 珂 窠 鈳 ㄎ
+ke2 咳 殼
+ke3 可 渴 坷
+ke4 客 克 課 刻 剋 溘 恪 嗑 兛
+kei1 剋
+ken3 肯 啃 墾 懇 齦
+ken4 掯
+keng1 坑 鏗 硜 吭
+kong1 空 崆 箜
+kong3 恐 孔 倥
+kong4 控 空
+kou1 摳
+kou3 口
+kou4 扣 寇 叩 蔻 筘
+ku1 哭 枯 窟 骷 刳
+ku3 苦
+ku4 庫 褲 酷 嚳
+kua1 誇 夸
+kua3 垮 侉
+kua4 跨 胯 挎
+kuai3 蒯
+kuai4 快 塊 會 筷 儈 獪 澮 膾 噲 鄶
+kuan1 寬
+kuan3 款
+kuang1 匡 框 筐 誆 劻
+kuang2 狂 誑
+kuang4 況 礦 曠 框 眶 鄺 壙
+kui1 虧 窺 盔 闚 刲 悝
+kui2 葵 睽 奎 揆 魁 逵 夔 暌 馗
+kui3 傀 跬
+kui4 愧 潰 匱 饋 喟 簣 聵 憒
+kun1 昆 崑 坤 琨 錕 焜 髡
+kun3 捆 綑 悃
+kun4 困 睏
+kuo4 括 擴 闊 廓 蛞 （ ） 【 】
+l1 ㄌ
+la1 拉 垃 邋 擸 啦
+la2 剌 旯
+la3 喇
+la4 臘 蠟 辣 剌 腊 瘌 落
+la5 啦
+lai2 來 萊 徠
+lai4 賴 癩 瀨 籟 睞 賚
+lan2 蘭 籃 藍 欄 攔 瀾 襤 婪 嵐 闌 讕 斕
+lan3 覽 懶 攬 欖 纜 壈 灠
+lan4 爛 濫
+lang1 啷
+lang2 郎 狼 廊 螂 瑯 琅 榔
+lang3 朗
+lang4 浪
+lao1 撈
+lao2 勞 牢 癆 醪
+lao3 老 姥 佬 栳
+lao4 絡 烙 酪 澇 嘮
+le1 ㄌ 肋 了
+le4 樂 勒 肋 泐 埒
+le5 了
+lei2 雷 纍 擂 嫘 鐳 羸 縲 罍 檑
+lei3 累 壘 儡 耒 磊 蕾
+lei4 類 淚 累 擂 酹
+leng2 稜 棱 楞
+leng3 冷
+leng4 愣
+li1 哩 璃
+li2 離 黎 梨 籬 釐 罹 璃 犁 漓 厘 灕 驪 貍 犛 狸 藜 蜊 蠡 鸝 嫠 褵 縭 喱 糎
+li3 裏 理 李 里 禮 哩 浬 鯉 裡 娌 俚 澧 邐 醴 蠡 鋰
+li4 利 力 例 歷 麗 立 厲 勵 粒 曆 荔 蒞 吏 隸 靂 瀝 慄 戾 俐 礪 莉 栗 礫 痢 儷 笠 唳 蠣 酈 嚦 壢 溧 癘 櫪 糲 轢 猁
+li5 璃
+lia3 倆
+lian2 連 聯 憐 廉 蓮 漣 簾 鐮 鰱 奩 帘 鎌 濂
+lian3 臉 斂 歛
+lian4 練 鍊 戀 煉 鏈 殮 瀲
+liang2 良 梁 量 糧 涼 粱 樑 踉 椋
+liang3 兩 倆 魎 啢
+liang4 亮 量 諒 輛 喨 晾 涼 踉 靚
+liao1 撩
+liao2 聊 寮 遼 療 寥 撩 僚 嘹 燎 繚 獠
+liao3 了 瞭 潦 燎 蓼
+liao4 廖 料 鐐 撂
+lie1 咧 咧
+lie2 咧
+lie3 裂
+lie4 列 烈 劣 裂 獵 捩 冽 鬣 躐 洌
+lie5 咧
+lin2 林 臨 鄰 淋 鱗 麟 霖 磷 琳 遴 嶙 燐 璘 粼 轔 痳 疄
+lin3 凜 懍 廩 檁
+lin4 吝 躪 藺 賃
+ling1 拎
+ling2 靈 零 玲 鈴 齡 陵 伶 凌 淩 ○ 菱 綾 聆 羚 苓 翎 囹 泠 欞 鯪
+ling3 領 嶺
+ling4 令 另
+liu1 溜
+liu2 劉 流 留 硫 琉 榴 瀏 瘤 騮 鎏 旒 鏐
+liu3 柳
+liu4 六 陸 溜 餾 遛 鎦
+lo5 咯
+lo1 咯
+long2 龍 隆 籠 嚨 聾 瓏 朧 矓 瀧 癃 窿 櫳 礱 曨 蘢
+long3 隴 攏 壟
+long4 弄
+lou1 摟
+lou2 樓 嘍 婁 螻 髏 僂 蔞
+lou3 簍 摟 嶁
+lou4 漏 陋 鏤 瘺
+lu1 嚕
+lu2 盧 蘆 廬 臚 爐 顱 瀘 鱸 壚 罏 艫 ㄌ
+lu3 魯 虜 擄 櫓 鹵 滷 艣 ㄌ
+lu4 路 陸 錄 鹿 露 賂 祿 碌 綠 麓 鷺 戮 轆 逯 漉 輅 僇 潞 籙 璐 簏 淥 ㄌ
+luan2 巒 孿 攣 鑾 鸞 臠
+luan3 卵
+luan4 亂
+lue4 略 掠
+lun1 掄
+lun2 倫 論 輪 淪 崙 侖 綸 掄 圇
+lun4 論
+luo1 囉 捋 囉
+luo2 羅 螺 蘿 鑼 邏 籮 騾 囉 儸 玀
+luo3 裸 瘰 臝
+luo4 落 洛 駱 絡 烙 酪 濼 犖 珞
+luo5 囉
+luu2 驢 閭 櫚
+luu3 旅 屢 履 侶 鋁 呂 縷 褸 膂
+luu4 律 綠 率 慮 濾 氯
+m1 ㄇ
+m2 嘸
+ma1 媽 嬤 孖 抹 嗎 嘛 蟆
+ma2 麻 痲 嘛 蟆
+ma3 碼 馬 瑪 螞
+ma4 罵 禡 螞
+ma5 嗎 嘛 蟆
+mai2 埋 霾
+mai3 買
+mai4 賣 麥 邁 脈 勱
+man1 顢
+man2 蠻 饅 瞞 蹣 謾 鰻 蔓
+man3 滿
+man4 慢 漫 曼 蔓 幔 嫚 鏝 縵 墁 熳
+mang2 忙 芒 茫 盲 氓 鋩
+mang3 莽 蟒 漭 茻
+mao1 貓
+mao2 毛 茅 矛 髦 錨 旄 蟊 蝥 酕
+mao3 卯 冇
+mao4 帽 冒 貌 貿 茂 瑁 懋 耄 瞀 袤
+me5 麼
+me1 麼
+mei2 沒 煤 眉 枚 梅 媒 莓 霉 玫 黴 楣 湄 嵋 脢
+mei3 每 美 鎂
+mei4 妹 媚 寐 昧 魅 袂
+men1 悶 們
+men2 們 門 捫
+men4 悶 燜 懣
+men5 們
+meng1 矇
+meng2 蒙 盟 萌 矇 朦 濛 檬 幪 氓 艨 虻 甿
+meng3 猛 蜢 艋 錳 懵 蠓 瞢
+meng4 夢 孟
+mi1 咪 瞇 眯
+mi2 迷 彌 謎 瀰 靡 糜 麋 縻 獼 蘼 醚 醾
+mi3 米 靡 弭 敉 眯 糎
+mi4 密 蜜 秘 祕 覓 泌 汨 謐 宓 冪 糸
+mian2 棉 綿 眠
+mian3 免 勉 緬 冕 娩 靦 湎 沔 丏 澠
+mian4 面 麵 眄
+miao1 喵
+miao2 苗 描 瞄
+miao3 秒 渺 藐 邈 緲 杳 眇 淼 杪
+miao4 妙 廟 繆
+mie1 咩 乜
+mie4 滅 蔑 衊 篾 蠛
+min2 民 緡
+min3 敏 憫 閔 閩 抿 泯 皿 湣 愍 黽
+ming2 明 名 鳴 銘 螟 冥 瞑 暝 茗
+ming3 酩
+ming4 命
+miu4 謬 繆
+mo1 摸 ㄇ
+mo2 模 磨 摩 膜 魔 摹 謨 蘑 嫫
+mo3 抹
+mo4 末 莫 默 漠 沒 膜 寞 陌 歿 脈 抹 沫 秣 茉 驀 墨 貊 磨 瘼 靺 眽 万
+mou2 謀 眸 繆 牟 鍪 蛑
+mou3 某
+mu2 模
+mu3 母 畝 牡 姆 拇 牳 姥
+mu4 木 目 幕 牧 慕 墓 募 穆 睦 暮 沐 苜 鶩
+n1 ㄋ
+n2 嗯 唔
+n3 嗯
+n4 嗯
+na1 那 哪
+na2 拿
+na3 哪
+na4 那 納 吶 訥 鈉 捺 娜 肭 衲
+na5 哪
+nai2 孻
+nai3 乃 奶 迺 氖 嬭
+nai4 耐 奈 鼐
+nan2 難 男 南 喃 楠 柟
+nan3 赧 腩
+nan4 難
+nang1 囊
+nang2 囊
+nang3 曩 攮
+nao2 撓 鐃 呶 猱
+nao3 腦 惱 瑙
+nao4 鬧 淖
+ne1 ㄋ 呢
+ne2 哪
+ne4 訥
+ne5 呢
+nei3 餒
+nei4 內
+nen4 嫩 恁
+neng2 能
+neng4 濘
+ng2 嗯 唔
+ng3 嗯
+ng4 嗯
+ni1 妮
+ni2 泥 尼 妮 倪 霓 怩 麑
+ni3 你 妳 擬 旎
+ni4 逆 溺 匿 膩 泥 睨 暱
+nian1 拈
+nian2 年 黏 粘
+nian3 捻 撚 攆 拈 輦 碾
+nian4 念 唸 廿
+niang2 娘 孃
+niang4 釀
+niao3 鳥 裊 嬲 嬝 嫋
+niao4 尿
+nie1 捏
+nie4 孽 鎳 躡 聶 鑷 涅 囁 齧 臬 乜
+nin2 您
+ning2 寧 凝 獰 嚀 檸 甯 擰
+ning3 擰
+ning4 濘 佞
+niu1 妞
+niu2 牛
+niu3 紐 扭 鈕 忸 狃
+niu4 拗
+nong2 農 濃 膿 儂 噥
+nong4 弄
+nou4 耨
+nu2 奴 駑 孥
+nu3 努 弩 ㄋ
+nu4 怒 ㄋ
+nuan3 暖
+nue4 虐 瘧 謔
+nuo2 挪 娜
+nuo4 諾 懦 糯 搦
+nuu3 女
+o1 喔 噢 ㄛ
+o2 哦
+o3 嚄
+o4 哦
+ou1 歐 甌 毆 謳 鷗 ㄡ 區
+ou3 偶 藕 嘔 耦
+ou4 漚
+p1 ㄆ
+pa1 趴 葩 啪 琶 杷
+pa2 爬 扒 琶 耙 杷
+pa4 怕 帕
+pa5 琶 杷
+pai1 拍
+pai2 排 牌 徘 俳 棑
+pai4 派 湃
+pan1 潘 攀 番
+pan2 盤 磐 蟠 胖 槃 蹣 爿
+pan4 判 叛 盼 畔 拚 泮
+pang1 乓 磅 滂
+pang2 旁 龐 膀 螃 徬
+pang3 嗙
+pang4 胖
+pao1 拋
+pao2 袍 咆 刨 匏 庖
+pao3 跑
+pao4 泡 砲 炮 皰
+pei1 胚 呸 醅
+pei2 培 賠 陪 裴
+pei4 配 佩 沛 珮 帔 轡
+pen1 噴
+pen2 盆
+pen4 噴
+peng1 砰 烹 抨 怦 澎
+peng2 朋 彭 澎 蓬 膨 硼 棚 鵬 篷 蟛
+peng3 捧
+peng4 碰
+pi1 批 披 匹 劈 霹 砒 丕 坯 紕
+pi2 皮 疲 脾 琵 枇 裨 啤 毗 貔 陂
+pi3 否 匹 疋 痞 仳
+pi4 譬 闢 僻 媲 屁 辟 癖 甓 擗 澼
+pian1 篇 偏 扁 翩
+pian2 駢 胼 便
+pian3 諞
+pian4 片 騙 遍
+piao1 飄 漂 慓 剽
+piao2 嫖 瓢
+piao3 漂 莩 縹 瞟 殍
+piao4 票 漂 驃
+pie1 瞥 撇
+pie3 撇
+pin1 拼 姘
+pin2 貧 頻 蘋 顰 嬪 瀕
+pin3 品
+pin4 聘 牝
+ping1 乒 娉 俜
+ping2 平 瓶 憑 評 屏 蘋 萍 坪 枰 洴
+po1 潑 坡 泊 陂 鏺 ㄆ
+po2 婆 鄱 皤
+po3 頗 叵 笸
+po4 破 迫 魄 珀 朴 粕
+pou1 剖
+pou3 剖 掊
+pu1 撲 仆 鋪 噗
+pu2 僕 樸 葡 蒲 菩 脯 濮 璞 匍
+pu3 普 樸 浦 埔 譜 圃 溥 氆 蹼
+pu4 暴 鋪 瀑 曝 舖
+q1 ㄑ
+qi1 期 七 妻 欺 戚 漆 棲 悽 淒 沏 緝 柒 萋 慼 溪 谿 凄 攲 ㄑ
+qi2 其 期 齊 奇 旗 騎 祈 棋 祺 祁 崎 琦 岐 歧 琪 麒 鰭 畦 臍 耆 淇 跂 綦 騏 蘄 圻 萁 蜞 頎
+qi3 起 啟 豈 乞 綺 杞 稽 屺 棨 企
+qi4 氣 汽 器 棄 契 砌 泣 迄 訖 憩 亟 葺 磧
+qia1 掐
+qia3 卡
+qia4 恰 洽
+qian1 千 鉛 遷 簽 牽 謙 籤 仟 阡 韆 騫 愆 僉 慳 搴 褰 粁 瓩 兛
+qian2 前 錢 乾 潛 黔 鉗 虔 箝 鈐 掮
+qian3 遣 淺 譴 繾
+qian4 欠 歉 倩 慊 茜 嵌 塹 縴
+qiang1 槍 腔 鎗 羌 嗆 搶 鏘 鏹 蜣 斨
+qiang2 強 牆 薔 嬙 檣 彊
+qiang3 搶 襁 強 鏹
+qiang4 蹌 嗆
+qiao1 敲 鍬 橇 蹺 悄
+qiao2 橋 瞧 僑 喬 樵 翹 憔 蕎 譙
+qiao3 巧 悄 愀 雀
+qiao4 翹 竅 俏 峭 鞘 誚 撬 殼
+qie1 切
+qie2 茄 伽
+qie3 且
+qie4 切 竊 妾 怯 愜 挈 篋 鍥
+qin1 親 侵 欽 衾
+qin2 勤 琴 秦 禽 擒 芹 檎 懃 噙 芩
+qin3 寢
+qin4 沁 撳 唚
+qing1 清 青 輕 傾 卿 氫 蜻 頃 鯖 氰
+qing2 情 晴 擎
+qing3 請
+qing4 慶 罄 綮 磬
+qiong2 窮 瓊 穹 跫 蛩 筇
+qiu1 秋 丘 邱 蚯 鞦 鰍 鶖 楸 萩
+qiu2 求 球 囚 仇 酋 裘 遒 毬 泅 逑
+qu1 區 屈 驅 趨 軀 嶇 曲 蛆 蛐 祛
+qu2 渠 劬 麴 衢 瞿 籧 蘧 蠷
+qu3 取 曲 娶 齲
+qu4 去 趣 覷
+quan1 圈 悛 棬
+quan2 全 權 泉 荃 詮 拳 銓 痊 顴 蜷 鬈 筌 牷
+quan3 犬 綣 畎
+quan4 勸 券
+que1 缺 闕
+que2 瘸
+que4 卻 確 雀 鵲 闕 闋 榷 搉 愨
+qun1 逡
+qun2 群 裙 麇
+r1 ㄖ 兒
+r5 兒
+ran2 然 燃 髯 蚺
+ran3 染 冉 苒
+rang1 嚷
+rang2 禳 穰 勷 瓤 蘘
+rang3 嚷 壤 攘
+rang4 讓
+rao2 饒 蕘 嬈 蟯
+rao3 擾 繞
+rao4 繞 遶
+re3 惹 喏
+re4 熱
+ren2 人 任 仁 壬
+ren3 忍 稔 荏
+ren4 任 認 刃 飪 韌 軔 衽 紉 紝 妊 仞 賃 恁
+reng1 扔
+reng2 仍 礽
+ri1 ㄖ
+ri4 日
+rong2 容 榮 融 溶 絨 熔 戎 蓉 榕 茸 嶸 鎔 羢 毧
+rong3 冗
+rou2 柔 揉 蹂 輮 楺 鞣
+rou4 肉
+ru2 如 儒 孺 茹 蠕 嚅 濡 襦
+ru3 乳 汝 辱
+ru4 入 褥 縟 蓐 溽 辱
+ruan3 軟 阮
+rui3 蕊
+rui4 瑞 銳 芮 睿 蚋 叡 枘
+run4 潤 閏
+ruo4 若 弱 箬 偌 爇
+s1 ㄙ
+<1 《 〈 ︽ ︿
+>1 》 〉 ︾ ﹀
+sa1 撒 挲
+sa3 灑 撒 洒
+sa4 薩 卅 颯
+sa5 挲
+sai1 鰓 腮
+sai4 賽 塞
+san1 三 參
+san3 散 傘
+san4 散
+sang1 喪 桑
+sang3 嗓 顙 搡
+sang4 喪
+sao1 騷 搔 臊 繅
+sao3 掃 嫂
+sao4 掃 瘙
+se4 色 塞 瑟 嗇 澀 穡
+sen1 森
+seng1 僧
+sh1 ㄕ
+sha1 殺 沙 紗 砂 莎 煞 鯊 裟 杉 痧 鎩 挲
+sha3 傻
+sha4 廈 煞 霎 嗄 歃 啥
+sha5 挲
+shai1 篩
+shai3 骰 色
+shai4 曬 晒
+shan1 山 扇 衫 杉 刪 珊 羶 舢 煽 潸 跚 姍 柵 芟 搧
+shan3 閃 陜 睒
+shan4 善 扇 汕 擅 膳 繕 鄯 煽 訕 贍 疝 鱔 騸
+shang1 商 傷 殤 觴 裳
+shang3 賞 晌 上
+shang4 上 尚
+shang5 裳
+shao1 燒 稍 梢 艄 捎 蛸 筲
+shao2 韶 勺 芍 杓
+shao3 少
+shao4 少 紹 哨 邵 召 劭 潲
+she1 奢 賒 猞
+she2 蛇 舌 佘
+she3 捨 舍
+she4 社 設 射 涉 舍 攝 赦 懾 麝
+shei2 誰
+shen1 身 深 伸 申 紳 呻 參 娠 莘 燊 蔘 珅
+shen2 甚 什 神
+shen3 沈 審 嬸 瀋 諗 讅 矧 哂
+shen4 慎 腎 滲 甚 蜃 沁
+sheng1 生 聲 升 牲 昇 甥 笙 陞
+sheng2 繩
+sheng3 省 眚
+sheng4 勝 盛 聖 剩 乘 賸
+shi1 失 施 師 詩 濕 溼 獅 屍 蝨 虱 噓 尸 ㄕ 絁 匙
+shi2 時 實 十 食 識 拾 石 蝕 什 寔
+shi3 使 始 史 駛 矢 屎 豕
+shi4 是 事 世 士 勢 室 示 試 式 釋 視 適 市 飾 逝 誓 侍 氏 嗜 恃 仕 柿 使 螫 弒 噬 拭 筮 舐 軾 諡 奭 謚
+shi5 匙
+shou1 收
+shou2 熟
+shou3 手 首 守
+shou4 受 售 壽 獸 授 瘦 狩 綬
+shu1 書 輸 叔 淑 殊 舒 梳 疏 《 》 〈 〉 蔬 樞 紓 抒 姝 樗 殳 倏 菽
+shu2 熟 淑 叔 塾 贖 孰 菽
+shu3 屬 暑 署 薯 鼠 數 蜀 黍 曙
+shu4 數 樹 術 述 束 豎 恕 庶 戍 墅 署 漱 澍
+shua1 刷 唰
+shua3 耍
+shua4 刷
+shuai1 摔 衰
+shuai3 甩
+shuai4 率 帥 蟀
+shuan1 栓 閂 拴
+shuan4 涮
+shuang1 雙 霜 孀
+shuang3 爽
+shui2 誰
+shui3 水
+shui4 睡 稅 說 帨
+shun3 吮
+shun4 順 舜 瞬
+shuo1 說
+shuo4 朔 碩 爍 鑠 妁 槊
+si1 司 思 私 絲 斯 撕 廝 鷥 嘶 澌 緦 偲 俬 颸 ㄙ
+si3 死
+si4 四 似 嗣 飼 寺 肆 祀 俟 伺 泗 巳 耜 姒 駟 兕 涘 汜
+song1 松 鬆 淞 嵩 忪 崧
+song3 聳 慫 悚 竦
+song4 送 宋 頌 訟 誦
+sou1 搜 颼 艘 蒐 廋 溲 餿 嗖
+sou3 擻 嗾 叟 藪 瞍
+sou4 嗽
+su1 蘇 甦 酥 穌 囌
+su2 俗
+su4 訴 速 素 肅 宿 塑 夙 粟 溯 愫 觫 膆 謖 簌 蔌
+suan1 酸 痠 狻
+suan4 算 蒜
+sui1 雖 睢 綏 荽
+sui2 隨 隋 綏
+sui3 髓
+sui4 歲 遂 碎 穗 隧 祟 燧 誶 邃
+sun1 孫 飧 蓀 猻
+sun3 損 筍 榫 隼
+suo1 縮 梭 莎 唆 娑 簑 嗦 挲 蓑 嗦
+suo3 所 索 鎖 瑣 嗩
+suo5 嗦
+t1 ㄊ
+ta1 他 她 它 牠 塌 踏 祂
+ta3 塔 獺
+ta4 踏 榻 蹋 遢 沓 嗒 撻 遝 闥
+tai1 胎 苔
+tai2 台 臺 抬 颱 苔 跆 檯 駘
+tai4 太 態 泰 汰 鈦
+tan1 貪 灘 攤 癱 坍 怹
+tan2 談 彈 痰 潭 譚 檀 壇 曇 罈 覃
+tan3 坦 毯 袒 忐
+tan4 探 嘆 歎 碳 炭
+tang1 湯 鏜 蹚
+tang2 堂 糖 唐 塘 膛 螳 棠 醣 搪 樘
+tang3 倘 躺 儻 淌 帑 惝
+tang4 趟 燙
+tao1 掏 濤 滔 饕 韜 弢 絛 燾 叨
+tao2 逃 桃 陶 萄 淘 啕 濤
+tao3 討
+tao4 套
+te1 ㄊ
+te4 特 忑 忒 慝
+teng1 熥
+teng2 疼 騰 藤 籐 謄 滕 螣 縢
+ti1 梯 踢 剔 銻 ˇ
+ti2 題 提 啼 蹄 醍 緹 荑
+ti3 體
+ti4 替 惕 涕 屜 悌 剃 嚏 倜 薙 逖
+tian1 天 添
+tian2 田 甜 填 恬 闐 畋 湉 菾
+tian3 舔 忝 殄 腆 靦
+tian4 掭
+tiao1 挑 佻
+tiao2 條 調 迢 蜩
+tiao3 挑 窕
+tiao4 跳 眺 糶 朓
+tie1 貼 帖 怗
+tie3 鐵
+tie4 帖 餮
+ting1 聽 廳 汀
+ting2 停 庭 廷 亭 蜓 霆 婷 渟
+ting3 挺 艇 町 梃 鋌 珽
+ting4 聽
+tong1 通
+tong2 同 童 銅 桐 潼 瞳 彤 佟 僮 仝 峒 侗 曈
+tong3 統 筒 桶 捅
+tong4 痛 慟
+tou1 偷
+tou2 頭 投 骰
+tou4 透
+tu1 突 禿 凸
+tu2 圖 途 突 徒 塗 屠 凸 荼 涂 酴
+tu3 土
+tu4 兔 吐 菟
+tuan1 湍
+tuan2 團 摶 糰
+tuan4 彖
+tui1 推
+tui2 頹
+tui3 腿
+tui4 退 蛻 褪
+tun1 吞
+tun2 屯 囤 豚 飩 臀
+tuo1 脫 拖 托 託 侂
+tuo2 駝 陀 馱 沱 佗 鴕 跎 橐 砣 鼉
+tuo3 妥 橢
+tuo4 拓 唾
+u1 ㄨ ㄩ
+wa1 蛙 哇 挖 窪 媧 洼 哇
+wa2 娃
+wa3 瓦 佤 瓩
+wa4 襪
+wa5 哇
+wai1 歪 喎
+wai4 外
+wan1 灣 彎 豌 剜 蜿
+wan2 完 玩 頑 丸 汍 紈 芄
+wan3 晚 惋 碗 宛 婉 菀 皖 輓 畹 挽 琬 綰
+wan4 萬 玩 腕 卍 翫 万 蔓
+wang1 汪
+wang2 王 亡 芒
+wang3 往 網 枉 罔 惘 魍 輞 网
+wang4 望 忘 妄 旺 王
+wei1 威 危 微 薇 崴 偎 煨 葳 逶
+wei2 為 圍 微 危 唯 維 惟 違 韋 薇 巍 桅 闈 帷 嵬 幃 溦
+wei3 偉 委 尾 偽 緯 萎 諉 葦 痿 猥 煒 娓 韙 瑋 韡 洧
+wei4 為 位 未 魏 衛 味 偽 謂 胃 慰 喂 餵 尉 渭 畏 蔚 蝟 遺
+wen1 溫 瘟
+wen2 文 聞 紋 蚊 雯 炆
+wen3 穩 吻 刎
+wen4 問 紊 汶 抆 搵 璺
+weng1 翁 嗡
+weng3 蓊 滃
+weng4 甕 瓮 罋
+wo1 窩 倭 渦 蝸 萵 踒 喔
+wo3 我
+wo4 握 臥 沃 渥 斡 齷 幄
+wu1 屋 烏 污 嗚 汙 圬 巫 鎢 鄔 ㄨ
+wu2 無 吳 吾 梧 巫 蕪 蜈 誣 毋 鼯
+wu3 五 午 武 舞 侮 伍 鵡 憮 嫵 忤 廡 仵 捂
+wu4 勿 物 務 惡 誤 悟 晤 霧 戊 塢 兀 騖 寤 鶩 鋈 焐
+x1 ㄒ
+xi1 西 希 息 悉 惜 昔 吸 錫 夕 汐 嘻 犧 稀 熄 溪 析 禧 蟋 熙 膝 嬉 兮 犀 晰 羲 曦 矽 蜥 熹 奚 晞 欷 蹊 樨 淅 皙 唏 烯 粞 谿 腊
+xi2 習 席 媳 襲 蓆 檄
+xi3 喜 洗 徙 璽 屣 囍
+xi4 細 戲 係 系 繫 隙 鬩 潟
+xia1 瞎 蝦 呷
+xia2 暇 峽 轄 霞 俠 狹 匣 呷 遐 狎 瑕 硤 柙 黠
+xia4 下 夏 嚇 廈 罅 唬
+xian1 先 仙 掀 鮮 纖 暹 躚 祆 ¢ 僊
+xian2 賢 閒 嫌 咸 鹹 弦 銜 絃 嫻 涎 啣 舷 閑 癇
+xian3 險 顯 蜆 癬 蘚 銑 燹 跣
+xian4 現 線 限 縣 憲 獻 羨 陷 腺 餡 莧 峴
+xiang1 香 相 鄉 箱 湘 襄 鑲 廂
+xiang2 詳 祥 降 翔 庠
+xiang3 想 響 享 餉 饗
+xiang4 向 像 象 項 巷 相 橡 嚮 曏
+xiao1 消 銷 削 蕭 瀟 宵 逍 囂 簫 硝 霄 哮 驍 梟 蠨 枵 魈 鴞 嘵 綃
+xiao2 淆 崤
+xiao3 小 曉 筱
+xiao4 校 笑 孝 效 肖 酵 嘯 傚
+xie1 些 歇 楔 蠍 蝎
+xie2 協 鞋 斜 攜 脅 諧 邪 偕 頡 挾 擷 絜 勰
+xie3 寫
+xie4 謝 械 洩 屑 瀉 懈 卸 泄 蟹 褻 榭 契 邂 廨 燮 紲 躞 獬
+xin1 心 新 辛 薪 欣 鋅 鑫 莘 炘 馨 芯 歆 昕 訢 忻
+xin2 尋
+xin4 信 釁 芯 囟
+xing1 興 星 猩 腥 惺
+xing2 行 形 型 刑 邢 硎 鉶 滎
+xing3 省 醒 擤
+xing4 性 幸 姓 杏 行 興 倖 悻 荇
+xiong1 兄 兇 胸 凶 匈 洶
+xiong2 雄 熊
+xiong4 敻
+xiu1 修 休 羞 脩 咻 貅 髹 饈 鵂
+xiu3 朽 宿 滫
+xiu4 秀 繡 袖 嗅 臭 溴 銹 宿 岫 琇
+xu1 須 需 虛 鬚 噓 墟 戌 胥 吁 歔
+xu2 徐
+xu3 許 栩 煦 詡
+xu4 序 續 蓄 緒 敘 絮 旭 恤 卹 酗 婿 畜 勗
+xuan1 宣 軒 喧 瑄 萱 暄 諼 禤
+xuan2 玄 旋 懸 漩 璇 璿
+xuan3 選 晅 烜 癬
+xuan4 炫 眩 絢 泫 渲 楦 鉉 鏇
+xue1 削 薛 靴
+xue2 學 穴 踅 噱
+xue3 雪
+xue4 血 削 謔
+xun1 勳 薰 燻 熏 醺 峋 曛 獯 勛
+xun2 尋 巡 詢 循 旬 馴 潯 珣 洵 荀 峋 恂 郇 噚
+xun4 訊 訓 迅 遜 殉 徇 巽 汛 噀 蕈
+#'1 「 」 ‘ ′ ﹁ ﹂
+#"1 『 』 “ ” ﹃ ﹄
+ya1 呀 壓 鴉 鴨 押 丫 椏 枒 呀
+ya2 牙 芽 涯 衙 蚜 崖 睚 琊 玡
+ya3 雅 啞
+ya4 亞 訝 迓 砑 揠 軋
+ya5 呀
+yai2 崖 睚
+yan1 煙 焉 淹 殷 醃 咽 胭 奄 湮 菸 嫣 燕 閹 懨
+yan2 研 言 顏 嚴 延 沿 炎 鹽 岩 妍 簷 筵 閻 蜒 檐 巖 芫
+yan3 眼 演 掩 衍 郾 偃 兗 甗 儼 魘 罨 蝘 黶 鼴 琰 厴
+yan4 驗 燕 厭 晏 雁 宴 艷 燄 彥 諺 硯 咽 嚥 唁 饜 淹 讌 堰 讞 贗 灩 焰 鷃 醼 豔
+yang1 央 秧 殃 鴦 鞅 泱
+yang2 楊 陽 揚 洋 羊 佯 瘍 徉 暘 煬
+yang3 養 仰 氧 癢 痒 瀁
+yang4 樣 恙 漾 怏 鞅 烊
+yao1 要 腰 夭 妖 邀 么 吆 祅 約 殀
+yao2 搖 謠 堯 遙 姚 瑤 淆 餚 徭 爻 繇 傜 僥 颻 嶢 肴 窯 珧 銚
+yao3 咬 窈 舀 杳 窅
+yao4 要 藥 耀 曜 鑰 鷂 燿 葯 瘧
+ye1 耶 噎 椰 掖
+ye2 爺 耶 椰 琊 揶 邪
+ye3 也 野 冶
+ye4 業 葉 頁 夜 曳 謁 靨 液 掖 腋 鄴 燁 曄
+yi1 一 壹 衣 依 醫 伊 揖 噫 漪 咿 禕 銥 ㄧ 〡
+yi2 宜 怡 移 疑 遺 儀 姨 夷 誼 胰 貽 飴 咦 詒 頤 彝 痍 圯 迻 荑
+yi3 以 已 乙 倚 椅 矣 蟻 迤 旖
+yi4 意 義 亦 易 議 益 異 藝 憶 譯 役 翼 毅 逸 抑 疫 邑 肄 億 繹 溢 縊 軼 詣 屹 佚 翌 羿 驛 懿 裔 臆 曳 奕 弈 蜴 翳 囈 弋 艾 刈 挹 佾 懌 劓 薏 悒 熠 殪 浥 翊
+yin1 因 音 陰 姻 殷 茵 慇 氤 喑 愔
+yin2 銀 吟 寅 淫 齦 霪 垠 夤 狺
+yin3 引 飲 隱 尹 癮 蚓 「 」 『 』
+yin4 印 蔭 胤 廕 窨 飲
+ying1 應 英 鷹 嬰 鶯 櫻 膺 瑛 鸚 攖 纓 嚶 罌 甖 瓔
+ying2 營 迎 蠅 螢 贏 盈 瑩 縈 熒 嬴 瀛 滎 塋 楹 瀅 瀠
+ying3 影 穎 潁 癭 郢
+ying4 映 硬 應 媵
+yo1 唷 喲 喲
+yo5 喲
+yong1 傭 庸 雍 擁 壅 癰 墉 鏞 慵 饔 臃
+yong2 喁 顒 傭
+yong3 永 泳 詠 勇 擁 踴 湧 蛹 甬 恿 俑 踊 涌
+yong4 用 佣 傭
+you1 優 憂 幽 悠 攸 呦
+you2 由 游 遊 尤 油 郵 猶 猷 魷 鈾 柚 疣 蕕 蝣
+you3 有 友 酉 莠 牖 黝 卣 誘
+you4 又 幼 右 誘 佑 柚 釉 祐 宥 侑 囿 鼬
+yu1 於 迂 淤 瘀 紆 ㄩ
+yu2 於 愉 魚 娛 餘 于 漁 予 愚 余 逾 俞 榆 虞 輿 渝 瑜 隅 歟 覦 竽 臾 諛 腴 盂 萸 妤 禺 雩 揄 狳 艅 踰
+yu3 與 語 雨 予 羽 嶼 宇 禹 齬 瘐 庾 圄 窳 傴
+yu4 育 遇 預 玉 欲 域 喻 愈 譽 獄 慾 浴 裕 煜 寓 禦 鈺 豫 御 鬱 籲 諭 癒 郁 馭 毓 芋 尉 熨 嫗 鷸 鬻 峪 彧 聿 燠 瘉 昱 魊
+yuan1 冤 淵 鴛 鳶 眢 蜎
+yuan2 原 元 員 園 圓 緣 源 援 媛 袁 ¥ 猿 垣 沅 轅 爰 圜 黿 櫞 芫 湲
+yuan3 遠
+yuan4 院 願 怨 苑 遠 媛 瑗 愿 掾
+yue1 約 曰
+yue4 月 越 樂 悅 岳 粵 閱 嶽 躍 鉞
+yun1 暈 氳
+yun2 雲 云 勻 芸 耘 紜 筠
+yun3 允 殞 隕 狁
+yun4 運 韻 孕 醞 蘊 慍 縕 韞 暈
+z1 ㄗ
+za1 扎 紮 匝 咂 臢
+za2 雜 咱 砸
+za5 臢
+zai1 災 哉 栽
+zai3 宰 仔 崽 載
+zai4 在 再 載
+zan1 簪 糌
+zan2 咱
+zan3 攢 拶
+zan4 贊 讚 暫 鏨 瓚
+zang1 髒 贓 臧
+zang4 藏 葬 臟 奘
+zao1 遭 糟
+zao2 鑿
+zao3 早 澡 棗 藻 蚤
+zao4 造 皂 噪 燥 躁 灶
+ze2 則 責 擇 澤 嘖 舴 幘
+ze4 側 仄 昃
+zei2 賊
+zen3 怎
+zen4 譖
+zeng1 增 曾 憎 繒
+zeng4 贈 甑
+zh1 ㄓ
+zha1 扎 紮 查 渣 喳 吒 楂 劄
+zha2 扎 札 炸 紮 閘 劄 軋
+zha3 眨 詐 鮓 砟
+zha4 乍 炸 詐 咋 蚱 吒 搾 榨 痄
+zhai1 摘 齋 側
+zhai2 擇 宅 翟
+zhai3 窄
+zhai4 債 寨 砦
+zhan1 占 沾 詹 瞻 霑 氈 黏 旃 粘
+zhan3 展 斬 盞 輾 嶄 搌
+zhan4 占 佔 站 戰 顫 湛 棧 綻 蘸
+zhang1 張 章 彰 樟 璋 鱆 蟑 漳
+zhang3 長 掌 漲
+zhang4 丈 仗 杖 帳 脹 賬 障 漲 瘴 嶂
+zhao1 招 朝 昭 嘲 釗 啁 著
+zhao2 著
+zhao3 找 爪 沼
+zhao4 照 趙 召 詔 兆 罩 肇 棹 笊 曌
+zhe1 遮 折 蜇 著
+zhe2 折 哲 蜇 轍 輒 摺 蟄 謫 磔
+zhe3 者 赭 褶
+zhe4 這 浙 蔗 鷓 柘
+zhe5 著
+zhei4 這
+zhen1 真 珍 貞 針 偵 砧 甄 箴 斟 榛 禎 臻 胗 蓁 鍼
+zhen3 枕 診 疹 畛 縝 軫 稹
+zhen4 振 震 賑 陣 圳 朕 娠 鎮 鴆 酖
+zheng1 爭 征 怔 崢 睜 猙 掙 蒸 箏 徵 正 烝 錚 癥
+zheng3 整 拯
+zheng4 正 政 證 証 症 鄭 幀 諍 掙
+zhi1 之 支 枝 知 隻 吱 肢 脂 織 擲 汁 氏 芝 胝 蜘 祗 卮 梔 ㄓ
+zhi2 直 值 植 殖 執 職 躑 姪 侄 摭 蹠 擲 縶
+zhi3 只 止 指 旨 址 咫 趾 芷 祉 紙 黹 酯 祇
+zhi4 至 志 治 致 制 質 緻 智 秩 置 稚 製 雉 炙 摯 滯 窒 痔 痣 桎 蛭 輊 峙 誌 幟 擲 躓 豸 帙 陟 疐 贄 觶 騭 櫛
+zhong1 中 忠 終 鐘 鍾 衷 盅 忪
+zhong3 種 踵 塚 冢 腫
+zhong4 眾 重 種 中 仲
+zhou1 周 週 州 洲 舟 粥 啁 賙 謅
+zhou2 妯 軸
+zhou3 肘 帚
+zhou4 咒 宙 晝 冑 紂 驟 皺 縐 籀 軸
+zhu1 朱 珠 株 諸 豬 誅 銖 蛛 侏 茱 姝 櫫 硃
+zhu2 竹 築 逐 燭 筑 竺 朮 躅 蠋 舳
+zhu3 主 煮 渚 拄 矚 囑
+zhu4 住 注 註 著 助 柱 祝 駐 鑄 築 佇 蛀 杼 箸 貯 炷
+zhua1 抓
+zhua3 爪
+zhuai1 拽
+zhuai3 跩
+zhuai4 拽
+zhuan1 專 磚 耑 顓
+zhuan3 轉
+zhuan4 傳 轉 賺 撰 篆 囀
+zhuang1 裝 莊 妝 粧 樁
+zhuang3 奘
+zhuang4 狀 壯 撞 幢 戇 僮
+zhui1 追 錐 隹 椎
+zhui4 墜 綴 贅 醊 惴 縋
+zhun1 屯 肫 諄
+zhun3 准 準 埻 隼
+zhuo1 捉 桌 卓 拙 涿 焯
+zhuo2 濁 灼 酌 茁 啄 斫 琢 鐲 著 擢 濯
+zi1 諮 姿 咨 茲 滋 資 貲 孜 孳 輜 緇 錙 吱 淄 髭 齜 孖 仔 ㄗ 子
+zi3 子 姊 籽 梓 仔 紫 滓 訾 秭
+zi4 自 字 恣 漬 牸 眥
+zi5 子
+zong1 宗 綜 縱 蹤 棕 鬃
+zong3 總
+zong4 從 縱 綜 粽
+zou1 鄒 諏
+zou3 走
+zou4 奏 揍
+zu1 租
+zu2 足 族 卒 鏃
+zu3 組 祖 阻 詛 俎
+zuan1 鑽 躦
+zuan3 纂 纘
+zuan4 賺 鑽 攥
+zui1 堆
+zui3 嘴
+zui4 最 罪 醉 蕞
+zun1 尊 遵 樽 鱒
+zun3 撙
+zuo1 作 嘬
+zuo2 作 昨 捽
+zuo3 左 佐 撮
+zuo4 做 作 坐 座 鑿 祚 怍 胙 酢
+&
