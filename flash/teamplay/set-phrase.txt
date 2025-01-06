@@ -1,0 +1,16 @@
+﻿&title=語詞分組搶答&
+&qFilename=phrase-k-08-04.csv&
+&questionType=兩欄式自動選項及答案&
+&fieldsOrder=題幹,答案,選項1,選項2,選項3,選項4&
+&questionToAnswer=5&
+&timer=1&
+&autoGotoNext=5&
+&onesec=12&
+&keyNext=PGDN&
+&keyPrevious=PGUP&
+&keyShow=CONTROL&
+&keyPlay=DOWN&
+&keySummary=END&
+&keyFinalResult=HOME&
+&keyPlayer1=1234&
+&keyPlayer2=jkl;&
