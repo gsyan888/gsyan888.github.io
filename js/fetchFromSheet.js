@@ -522,6 +522,12 @@ async function makeGameTest(swf_id, sheetId, gid, gameId) {
   
   var flashvars, data, swfURL, fnName;
   
+  if(typeof(swf_id)=='string') {
+	  swf_id = swf_id.toLowerCase();
+  }
+  
+  //console.log('debug','\nswf_id\n',swf_id, '\nsheetId\n',sheetId, '\ngid\n',gid, '\ngameId\n',gameId);
+  
   if(gameId != '') {
     data = await fetchGameDataFromSheet(sheetURL, gameId, 'A'); 
     swf_id = (data.length > 0 ? data[0]:'').toLowerCase();
@@ -536,9 +542,10 @@ async function makeGameTest(swf_id, sheetId, gid, gameId) {
 	//}
 	if(typeof(swf_id) == 'string' && swf_id.replace(/\s/g,'') != ''){
 	  fnName = 'sheetTo' + fnNames[swf_id];
+
 	  //呼叫 sheetToXxxxxx , 取出指定網址的試算表內容
 	  if(typeof(window[fnName]) == 'function') {
-        flashvars = await window[fnName](sheetURL);    
+        flashvars = await window[fnName](sheetURL);  		
 	  }
 	} else {
 	  await getMenuItemFromSheet(sheetId, gid, 'A');
