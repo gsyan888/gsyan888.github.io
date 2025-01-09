@@ -353,6 +353,108 @@ async function sheetToArithmetic(url) {
   //console.log(flashvars);
   return flashvars;
 }
+
+/**
+ * 抓取整個工作表的資料並轉為 Monopoly 設定及題庫
+ * @param {string} url Google 試算表共用連結的網
+ * @return {Object}
+ */
+async function sheetToMonopoly(url) {
+  var data = await getSheetData(url);
+  //console.log(data);
+  var flashvars = {};
+  if(data.length > 0) {
+    data.splice(0, 3); //去掉前面沒用的
+    var col, k, v, node, child, id, type, text, title, step, options, answer;  
+    var xmlString = '<?xml version="1.0" encoding="UTF-8"?><root></root>';
+    var parser = new DOMParser();
+    var xmlDoc = parser.parseFromString(xmlString, "text/xml");
+    var root = xmlDoc.querySelector('root');
+    var tagNameMap = {}, keys;
+    for(var i=0; i<data.length; i++) {
+      col = data[i];
+	  if(typeof(col[0])!='string' || col[0]=='') {
+	    continue;
+	  }
+	  if(col[0]=='設定') {
+        k = col[2];
+		v = col[3];
+		if(k!=null && v!=null) {
+  		  node = xmlDoc.createElement('settings');
+		  node.setAttribute(k, v);
+		  root.appendChild(node);
+		  if(k=='title') {
+			  flashvars['gameTitle'] = v;
+		  }
+	    } 
+	  } else if(col[0]=='格子內容') {
+	    node = root.querySelector('blocks');
+	    if(!node) {
+		  node = xmlDoc.createElement('blocks');
+		  root.appendChild(node);
+		}
+	    id = col[1];
+		type = col[2]==null?'':col[2];
+		text = col[3];
+		if(id!=null && text!=null) {		  
+		  child = xmlDoc.createElement('block');
+		  child.setAttribute('id', id);
+		  child.setAttribute('type', type);
+		  child.setAttribute('text', text);
+		  node.appendChild(child);
+		}
+	  } else {
+	    title = col[0]; //==tag
+		step = col[1];
+		text = col[2];
+		options = col[3];
+		answer = col[4];
+		if(title != null && step != null && text != null) {
+		  if(!tagNameMap[title]) {
+		    tagNameMap[title] = 'QA' + Object.keys(tagNameMap).length;
+		  }
+		  node = root.querySelector(tagNameMap[title]);
+		  if(!node) {
+		    node = xmlDoc.createElement(tagNameMap[title]);
+			node.setAttribute('title', title);
+			root.appendChild(node);
+		  }
+		  child = xmlDoc.createElement('item');
+		  child.setAttribute('text', text);
+		  child.setAttribute('step', step);
+		  if(options!=null && answer!=null) {
+		    //有選項的題型
+			child.setAttribute('options', options);
+			child.setAttribute('answer', answer);
+		  }
+		  node.appendChild(child);
+		}
+	  }
+    }
+    //將 block 的 type 改成對應的 tag name
+    node = root.querySelectorAll('blocks block');
+    if(node) {
+      for(var i=0; i<node.length; i++) {
+        type = node[i].getAttribute('type');
+	    if(typeof(type)=='string' && type!='') {
+	      node[i].setAttribute('type', tagNameMap[type]);
+	    }
+      }
+    }
+    //console.log(xmlDoc);
+  }
+  //轉為 xml 字串
+  var serializer = new XMLSerializer();
+  xmlString = '';
+  try {
+    xmlStr = serializer.serializeToString(xmlDoc);
+  }catch(e) { console.log(e); };
+  if(typeof(xmlStr)=='string') {
+	flashvars['gameXML'] = xmlStr;
+  }
+  return flashvars;
+}
+
 /**
  * 以 & = 來解析出參數
  * @param {string} str 原始資料
@@ -518,6 +620,7 @@ async function makeGameTest(swf_id, sheetId, gid, gameId) {
 	  'f8_traina': 'Train',
 	  'teamplay' : 'Teamplay',
 	  'arithmetic': 'Arithmetic',
+	  'monopoly': 'Monopoly',
   };
   
   var flashvars, data, swfURL, fnName;
