@@ -21,6 +21,14 @@ function gdGetSpreadSheetID(url) {
   }
   return id;
 };
+/**
+ * 判斷網址是否為 Google SpreadSheet
+ * @param {string} url 試算表的網址
+ * @return {boolean} 
+ */
+function gdIsSpreadSheetUrl(url) {
+  return ( typeof(url)=='string' && /sheets/.test(url) && gdGetSpreadSheetID(url)!='' );
+};
 function gdGetSpreadSheetUrl(id, gid) {
   return 'https://docs.google.com/spreadsheets/d/'+id+'/edit?usp=sharing'+(typeof(gid)=='string' && gid!=''?'&gid='+gid+'#gid='+gid:'');	
 }
@@ -667,7 +675,7 @@ async function makeGameTest(swf_id, sheetId, gid, gameId) {
 	  'monopoly': 'Monopoly',
 	  'flashcard': 'Flashcard',
   };
-  
+
   var flashvars, data, swfURL, fnName;
   
   if(typeof(swf_id)=='string') {
@@ -677,11 +685,27 @@ async function makeGameTest(swf_id, sheetId, gid, gameId) {
   //console.log('debug','\nswf_id\n',swf_id, '\nsheetId\n',sheetId, '\ngid\n',gid, '\ngameId\n',gameId);
   
   if(gameId != '') {
+	//由選單工作抓資料, 應該會回傳 B/C/D 欄(遊戲代碼, 設定及題庫, 設定及題庫2)
     data = await fetchGameDataFromSheet(sheetURL, gameId, 'A'); 
     swf_id = (data.length > 0 ? data[0]:'').toLowerCase();
-	fnName = 'getFlashvarsOf' + fnNames[swf_id];
-	//呼叫 getFlashvarsOfXxxxxx ,將資料轉為遊戲參數
-    flashvars = await window[fnName](data);    
+	if(swf_id != '' && typeof(data[1])=='string') {
+      if(!gdIsSpreadSheetUrl(data[1]) && !(data[1]=='' && typeof(data[2])=='string' && gdIsSpreadSheetUrl(data[2])) ) {
+		//解析由多遊戲的工作表抓來的單一遊戲資料
+	    fnName = 'getFlashvarsOf' + fnNames[swf_id];
+	    //呼叫 getFlashvarsOfXxxxxx ,將資料轉為遊戲參數
+	    if(typeof(window[fnName]) == 'function') {
+          flashvars = await window[fnName](data);    
+	    }
+	  } else {
+		//設定及題庫欄位中是試算表網址, 該工作表應該就是遊戲的設定及題庫,直接載入
+	    fnName = 'sheetTo' + fnNames[swf_id];
+	    //呼叫 sheetToXxxxxx , 取出指定網址的試算表內容
+	    if(typeof(window[fnName]) == 'function') {
+		  var u = (data[1]!='' ? data[1] : data[2]); //設定及題庫為空的, 就用設定及題庫2的內容
+          flashvars = await window[fnName](u);  		
+	    }		
+	  }
+	}
   } else { 
     //if(typeof(swf_id) != 'string' || swf_id == ''){
 	//  //在試算表中的 B 欄中,找看看有沒有 SWF_ID
@@ -690,12 +714,12 @@ async function makeGameTest(swf_id, sheetId, gid, gameId) {
 	//}
 	if(typeof(swf_id) == 'string' && swf_id.replace(/\s/g,'') != ''){
 	  fnName = 'sheetTo' + fnNames[swf_id];
-
 	  //呼叫 sheetToXxxxxx , 取出指定網址的試算表內容
 	  if(typeof(window[fnName]) == 'function') {
         flashvars = await window[fnName](sheetURL);  		
 	  }
 	} else {
+	  //show menu , not load game
 	  await getMenuItemFromSheet(sheetId, gid, 'A');
 	  return;
 	}
