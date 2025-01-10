@@ -353,7 +353,51 @@ async function sheetToArithmetic(url) {
   //console.log(flashvars);
   return flashvars;
 }
-
+/**
+ * 抓取整個工作表的資料並轉為 Flashcard 設定及題庫
+ * @param {string} url Google 試算表共用連結的網
+ * @return {Object}
+ */
+async function sheetToFlashcard(url) {
+  var data = await getSheetData(url);
+  //console.log(data);
+  var flashvars = {};
+  var foundQindex = false;  
+  var questionLines = '';
+  var fields;
+  var values, value;
+  for(var i=0; i<data.length; i++) {
+    values = data[i];
+	if(typeof(values[1])=='string') {
+	  value = '';
+	  if( /color|sound_enabled|countdown|background_image|message|message_url]/.test(values[1]) ) {
+	    if(typeof(values[2])!= 'undefined' && values[2]!=null) {
+		  value = values[2];
+	    }
+		flashvars[values[1]] = value;
+	  } else if( /\*{3}題庫\*{3}/.test(values[1]) ) {
+		foundQindex = true;
+	  } else if(foundQindex && typeof(values[2])=='string' && values[2].length > 0) {
+        questionLines += values[2];
+		if(typeof(values[3])=='string' && !isNaN(values[3])) {
+          questionLines += ',' + Number(values[3]);
+		}
+		questionLines += '\n';
+	  }
+	}
+  }
+  //check color format: RRGGBB --> 0xRRGGBB, #RRGGBB -> 0xRRGGBB
+  if(typeof(flashvars['color'])=='string') {
+	 flashvars['color'] = flashvars['color'].trim();
+	 if(!/^0x/i.test(flashvars['color'])) {
+       if(flashvars['color'].length==6) flashvars['color'] = '0x'+flashvars['color'];
+       else flashvars['color'] = flashvars['color'].replace('#', '0x');
+	 }
+  }
+  flashvars['cards'] = questionLines;
+  //console.log(flashvars);
+  return flashvars;
+}
 /**
  * 抓取整個工作表的資料並轉為 Monopoly 設定及題庫
  * @param {string} url Google 試算表共用連結的網
@@ -621,6 +665,7 @@ async function makeGameTest(swf_id, sheetId, gid, gameId) {
 	  'teamplay' : 'Teamplay',
 	  'arithmetic': 'Arithmetic',
 	  'monopoly': 'Monopoly',
+	  'flashcard': 'Flashcard',
   };
   
   var flashvars, data, swfURL, fnName;
