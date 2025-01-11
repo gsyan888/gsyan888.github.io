@@ -407,6 +407,43 @@ async function sheetToFlashcard(url) {
   return flashvars;
 }
 /**
+ * 抓取整個工作表的資料並轉為 RichmanSpecial 設定及題庫
+ * @param {string} url Google 試算表共用連結的網
+ * @return {Object}
+ */
+async function sheetToRichman(url) {
+  var data = await getSheetData(url);
+  //console.log(data);
+  var flashvars = {};
+  var foundQindex = false;  
+  var questionLines = '';
+  var values, value;
+  var iQ = 0;
+  var nQ = '';
+  for(var i=0; i<data.length; i++) {
+    values = data[i];
+	if(typeof(values[1])=='string') {
+      if( /\*{3}題庫\*{3}/.test(values[1]) ) {
+		foundQindex = true;
+	  } else if(foundQindex && typeof(values[2])=='string' && values[2].length > 0 && typeof(values[3])=='string' && !isNaN(values[3])) {
+		nQ = 'Q' + (Math.floor(iQ/5)+1) + '_' + (iQ%5 + 1);
+		flashvars[nQ] = values[2];
+		for(var j=1; j<=4; j++) {
+		  value = values[3+j];
+		  if(typeof(value)!='string') {
+		    value = '';
+          }
+		  flashvars[nQ + '_A_' + String.fromCharCode(96 + j)] = value;
+		}
+		flashvars[nQ + '_A_real'] = values[3 + Number(values[3])];
+		iQ++;
+	  }
+	}
+  }  
+  //console.log(flashvars);
+  return flashvars;
+}
+/**
  * 抓取整個工作表的資料並轉為 Monopoly 設定及題庫
  * @param {string} url Google 試算表共用連結的網
  * @return {Object}
@@ -674,6 +711,7 @@ async function makeGameTest(swf_id, sheetId, gid, gameId) {
 	  'arithmetic': 'Arithmetic',
 	  'monopoly': 'Monopoly',
 	  'flashcard': 'Flashcard',
+	  'richman': 'Richman',
   };
 
   var flashvars, data, swfURL, fnName;
@@ -724,8 +762,13 @@ async function makeGameTest(swf_id, sheetId, gid, gameId) {
 	  return;
 	}
   }
-  if(typeof(swf_id) == 'string' && getSwfConfig(swf_id)){
-    swfURL = 'https://gsyan888.github.io/flash/' + getSwfConfig(swf_id);
+  if(typeof(swf_id) == 'string' && getSwfConfig(swf_id)){    
+	if(/^192\.168\.2/.test(window.location.host)) {
+	  //for local testing
+	  swfURL = '/others/flash/' + getSwfConfig(swf_id);
+	} else {
+	  swfURL = 'https://gsyan888.github.io/flash/' + getSwfConfig(swf_id);
+	}
   } else {
 	swfURL = '';
   }
