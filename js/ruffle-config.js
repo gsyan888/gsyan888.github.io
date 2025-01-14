@@ -9,5 +9,5 @@ window.RufflePlayer.config.allowFullscreen = true;
 //optons for loading fonts and set default fonts (Chinese fonts)
 window.RufflePlayer.config.fontSources = ["https://gsyan888.github.io/fonts/Iansui-Regular.ttf"];
 window.RufflePlayer.config.defaultFonts = {
-	sans: ["Iansui Regular", "Noto Sans TC Regular", "Noto Sans TC Light", "Noto Sans TC Thin"]
+	sans: ["Iansui Regular", "Noto Sans TC Regular", "Noto Sans TC Light", "Noto Sans TC Thin", "全字庫說文解字"]
 };
