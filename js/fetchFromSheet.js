@@ -444,6 +444,191 @@ async function sheetToRichman(url) {
   return flashvars;
 }
 /**
+ * 抓取整個工作表的資料並轉為 RichmanSpecial 設定及題庫
+ * @param {string} url Google 試算表共用連結的網
+ * @return {Object}
+ */
+async function sheetTo2p(url) {
+  var data = await getSheetData(url);
+  //console.log(data);
+  var flashvars = {};
+  var foundQindex = false;  
+  var questionLines = '';
+  var values, value;
+  var iQ = 0;
+  var nQ = '';
+  for(var i=0; i<data.length; i++) {
+    values = data[i];
+	if(typeof(values[1])=='string') {
+      if( /\*{3}題庫\*{3}/.test(values[1]) ) {
+		foundQindex = true;
+	  } else if(foundQindex && typeof(values[2])=='string' && values[2].length > 0 && typeof(values[3])=='string' && !isNaN(values[3])) {
+        if(flashvars['TxtFlag'] == 99) {
+		  nQ = 'Q' + (Math.floor(iQ/5)+1) + '_' + (iQ%5 + 1);
+		  flashvars[nQ] = values[2];
+		  for(var j=1; j<=4; j++) {
+		    value = values[3+j];
+		    if(typeof(value)!='string') {
+		      value = '';
+            }
+		    flashvars[nQ + '_A_' + String.fromCharCode(96 + j)] = value;
+		  }
+		  flashvars[nQ + '_A_real'] = values[3 + Number(values[3])];
+		  iQ++;
+        } else {
+          //轉為用 tab 分隔, 一題一行 Q A A1 A2 A3 A4 X1 X2 X3 ...
+		  questionLines += values[2] + '\t' + values[3];
+		  for(var j=1; j<=values.length; j++) {
+		    value = values[3+j];
+			if(j<=4 && (typeof(value)=='undefined' || value==null)) {
+				//前四個為選擇題用的, 一定要有內容, 沒有的就用空白; 之後的為超選擇的部份, 只取有內容者
+				value = '';
+			}
+		    if(typeof(value)!='undefined' && value != null && (j<=4 || (j>4 && value!=''))) {
+		      questionLines += '\t' + value;
+            }
+		  }		  		  
+		  questionLines += '\n';
+		  iQ++;
+		}
+	  } else if( /UnitPath|QuizPath|Name|TxtFlag|QzTotal|okflag]/.test(values[1]) ) {
+	    if(typeof(values[2])!= 'undefined' && values[2]!=null) {
+		  value = values[2];
+	    }
+		flashvars[values[1]] = value;		
+      }
+	}
+  }
+  if(iQ > 0) {
+    flashvars['okflag'] = 1;
+    if(questionLines!='') {
+      flashvars['questionLines'] = questionLines;
+	}
+	if(flashvars['TxtFlag'] == 99) {
+      flashvars['QzTotal'] = 15;
+	} else {
+      flashvars['QzTotal'] = iQ;
+	}
+    flashvars['TxtFlag'] = Number(flashvars['TxtFlag']);
+	if(!isNaN(flashvars['UnitPath'])) {
+      flashvars['UnitPath'] = Number(flashvars['UnitPath']);
+      flashvars['UnitPath'] = (flashvars['UnitPath']<10?'0':'') + flashvars['UnitPath'];
+      flashvars['UnitPath'] = 'Game_' + flashvars['UnitPath'];
+	}
+	//iOS 關掉右鍵選單的功能
+	if(navigator.platform === 'MacIntel' && navigator['maxTouchPoints'] > 1) {
+	  try{window.RufflePlayer.config.contextMenu = 'off';}catch(e){};
+	}
+  }
+  //console.log(flashvars);
+  return flashvars;
+}
+function obj2Lines(obj, nameList) {
+  var lines = '', key, value;
+  if(!nameList) {
+    nameList = Object.keys(obj);
+  }
+  for(var i=0; i<nameList.length; i++) {
+    key = nameList[i];
+	value = obj[key];
+    if(typeof(value)!='undefined' && value!=null) {
+      lines += '&' + key + '=' + value + '&\r\n';
+	}
+  }
+  return lines;
+}
+function leadingZeros(value, places) {
+   value = value.toString();
+   while(value.length < places) {
+     value = "0" + value;
+   }
+   return value;
+}
+function isImage(t) {
+   t = t.toLowerCase();
+   return t.indexOf('.png') >=0 || t.indexOf('.jpg') >=0 || t.indexOf('.gif') >=0 || t.indexOf('.swf') >=0 || t.indexOf('.jpeg') >=0 || t.indexOf('.bmp') >=0 || t.indexOf('https://') >=0 || t.indexOf('http://') >=0 ;
+}
+async function fetchImage(url) {
+  var imageBlob = await fetch(url).then(response => response.blob());
+  return imageBlob;
+}
+async function download2p(url) {
+  var data = await sheetTo2p(url);
+  var zip = new JSZip();
+  var root = zip.folder(data['QuizPath']);
+  root.file("_para.txt", obj2Lines(data, ['TxtFlag', 'QzTotal', 'Name', 'okflag']) );
+  var lines = data['questionLines'].trim().split(/\n+/);
+  var qIndex = 1;
+  var col, q, j, imageTotal, imagePath, imageBlob, fName;
+  for(var i=0; i<lines.length; i++) {
+    if(lines[i].replace(/\s/g, '') != '') {  
+      col = lines[i].split(/\t/);
+      qObj = {};
+      qObj['Type'] = 0;
+      qObj['Q'] = col[0];
+      qObj['A'] = col[1] + "";
+      imageTotal = 0;
+	  imageBlob = {};
+      j = 1;
+      while(j < col.length - 1)  {
+        if(typeof(col[1 + j]) != 'undefined' && col[1 + j] != "")  {
+          if(isImage(col[1 + j])) {                        
+            imagePath = col[1 + j];
+            //如果是網路的圖片，就試著抓抓看, 成功就列入壓縮檔中
+			if(imagePath.indexOf('https://') >=0 || imagePath.indexOf('http://') >=0) {
+			  imageBlob[j] = await fetchImage(imagePath);
+			  if(imageBlob[j] && imageBlob[j].type.indexOf('image') >= 0 && imageBlob[j].size > 0) {
+			    fName = leadingZeros(qIndex, 3)+String.fromCharCode(64+j)+'.jpg';
+			    root.file(fName, imageBlob[j]);
+			  }
+			}
+            imageTotal++;
+          } else {
+            if(j <= 4)  {
+              qObj["A" + j] = col[1 + j];
+            } else {
+              qObj["X" + (j - 4)] = col[1 + j];
+            }
+          }
+        }
+        j++;
+      }
+      if(imageTotal > 0) {
+        qObj['Type'] = 2;
+      }
+	  imagePath = '';
+      if(isImage(qObj['Q'])) {
+        col = qObj.Q.split(";");
+        if(col.length == 1) {
+          imagePath = qObj['Q'];
+          qObj['Q'] = "";
+        } if(isImage(col[0])) {
+          imagePath = col[0];
+          qObj['Q'] = col[1];
+        } else {
+          imagePath = col[1];
+          qObj['Q'] = col[0];
+        }
+        qObj['Type'] = 1;
+		if(imagePath !='' ) {
+		  imageBlob[0] = await fetchImage(imagePath);
+		  fName = leadingZeros(qIndex, 3)+'.jpg';
+		  root.file(fName, imageBlob[0]);
+        }
+      }
+	  qObj['okflag'] = 1;
+	  root.file( leadingZeros(qIndex, 3)+".txt", obj2Lines(qObj) );
+	  qIndex++;
+    }        
+  }
+  zip.generateAsync({type:"blob"})
+  .then(function(content) {
+    // see FileSaver.js
+    saveAs(content, data['Name']+".zip");
+  });
+}
+
+/**
  * 抓取整個工作表的資料並轉為 Monopoly 設定及題庫
  * @param {string} url Google 試算表共用連結的網
  * @return {Object}
@@ -712,6 +897,7 @@ async function makeGameTest(swf_id, sheetId, gid, gameId) {
 	  'monopoly': 'Monopoly',
 	  'flashcard': 'Flashcard',
 	  'richman': 'Richman',
+	  '2p': '2p',
   };
 
   var flashvars, data, swfURL, fnName;
