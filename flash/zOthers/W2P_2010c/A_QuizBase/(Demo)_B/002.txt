@@ -1,0 +1,7 @@
+﻿&Type=1&
+&Q=英文三項單選題：What does Jordan like to do？&
+&A1=Riding a bike.&
+&A2=Playing baseball.&
+&A3=Flying a kite.&
+&A=1&
+&okflag=1&

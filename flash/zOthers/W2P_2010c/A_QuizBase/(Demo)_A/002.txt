@@ -1,0 +1,7 @@
+﻿&Type=0&
+&Q=英文三項單選題：Jack didn't feel well today. He was _______.&
+&A1=happy&
+&A2=sick&
+&A3=fat&
+&A=2&
+&okflag=1&

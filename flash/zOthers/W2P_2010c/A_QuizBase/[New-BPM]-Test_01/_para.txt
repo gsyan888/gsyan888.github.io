@@ -1,0 +1,4 @@
+﻿&TxtFlag=3&
+&QzTotal=5&
+&Name=[複選注音]文字題庫測試&
+&okflag=1&

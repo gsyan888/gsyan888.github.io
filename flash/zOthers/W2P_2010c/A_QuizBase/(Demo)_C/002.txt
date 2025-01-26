@@ -1,0 +1,4 @@
+﻿&Type=2&
+&Q=英文三項單選題：Jordan likes to ride a bike.&
+&A=1&
+&okflag=1&
