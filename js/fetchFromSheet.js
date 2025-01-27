@@ -553,79 +553,86 @@ async function fetchImage(url) {
   return imageBlob;
 }
 async function download2p(url) {
-  var data = await sheetTo2p(url);
-  var zip = new JSZip();
-  var root = zip.folder(data['QuizPath']);
-  root.file("_para.txt", obj2Lines(data, ['TxtFlag', 'QzTotal', 'Name', 'okflag']) );
-  var lines = data['questionLines'].trim().split(/\n+/);
-  var qIndex = 1;
-  var col, q, j, imageTotal, imagePath, imageBlob, fName;
-  for(var i=0; i<lines.length; i++) {
-    if(lines[i].replace(/\s/g, '') != '') {  
-      col = lines[i].split(/\t/);
-      qObj = {};
-      qObj['Type'] = 0;
-      qObj['Q'] = col[0];
-      qObj['A'] = col[1] + "";
-      imageTotal = 0;
-	  imageBlob = {};
-      j = 1;
-      while(j < col.length - 1)  {
-        if(typeof(col[1 + j]) != 'undefined' && col[1 + j] != "")  {
-          if(isImage(col[1 + j])) {                        
-            imagePath = col[1 + j];
-            //如果是網路的圖片，就試著抓抓看, 成功就列入壓縮檔中
-			if(imagePath.indexOf('https://') >=0 || imagePath.indexOf('http://') >=0) {
-			  imageBlob[j] = await fetchImage(imagePath);
-			  if(imageBlob[j] && imageBlob[j].type.indexOf('image') >= 0 && imageBlob[j].size > 0) {
-			    fName = leadingZeros(qIndex, 3)+String.fromCharCode(64+j)+'.jpg';
-			    root.file(fName, imageBlob[j]);
+  var data;
+  if(gdIsSpreadSheetUrl(url)) {
+    data = await sheetTo2p(url);
+  }
+  if(data && data['QuizPath'] && data['questionLines'] && data['okflag']) {
+    var zip = new JSZip();
+    var root = zip.folder(data['QuizPath']);
+    root.file("_para.txt", obj2Lines(data, ['TxtFlag', 'QzTotal', 'Name', 'okflag']) );
+    var lines = data['questionLines'].trim().split(/\n+/);
+    var qIndex = 1;
+    var col, q, j, imageTotal, imagePath, imageBlob, fName;
+    for(var i=0; i<lines.length; i++) {
+      if(lines[i].replace(/\s/g, '') != '') {  
+        col = lines[i].split(/\t/);
+        qObj = {};
+        qObj['Type'] = 0;
+        qObj['Q'] = col[0];
+        qObj['A'] = col[1] + "";
+        imageTotal = 0;
+	    imageBlob = {};
+        j = 1;
+        while(j < col.length - 1)  {
+          if(typeof(col[1 + j]) != 'undefined' && col[1 + j] != "")  {
+            if(isImage(col[1 + j])) {                        
+              imagePath = col[1 + j];
+              //如果是網路的圖片，就試著抓抓看, 成功就列入壓縮檔中
+              if(imagePath.indexOf('https://') >=0 || imagePath.indexOf('http://') >=0) {
+                imageBlob[j] = await fetchImage(imagePath);
+			    if(imageBlob[j] && imageBlob[j].type.indexOf('image') >= 0 && imageBlob[j].size > 0) {
+			      fName = leadingZeros(qIndex, 3)+String.fromCharCode(64+j)+'.jpg';
+			      root.file(fName, imageBlob[j]);
+			    }
 			  }
-			}
-            imageTotal++;
-          } else {
-            if(j <= 4)  {
-              qObj["A" + j] = col[1 + j];
+              imageTotal++;
             } else {
-              qObj["X" + (j - 4)] = col[1 + j];
+              if(j <= 4)  {
+                qObj["A" + j] = col[1 + j];
+              } else {
+                qObj["X" + (j - 4)] = col[1 + j];
+              }
             }
           }
+          j++;
         }
-        j++;
-      }
-      if(imageTotal > 0) {
-        qObj['Type'] = 2;
-      }
-	  imagePath = '';
-      if(isImage(qObj['Q'])) {
-        col = qObj.Q.split(";");
-        if(col.length == 1) {
-          imagePath = qObj['Q'];
-          qObj['Q'] = "";
-        } if(isImage(col[0])) {
-          imagePath = col[0];
-          qObj['Q'] = col[1];
-        } else {
-          imagePath = col[1];
-          qObj['Q'] = col[0];
+        if(imageTotal > 0) {
+          qObj['Type'] = 2;
         }
-        qObj['Type'] = 1;
-		if(imagePath !='' ) {
-		  imageBlob[0] = await fetchImage(imagePath);
-		  fName = leadingZeros(qIndex, 3)+'.jpg';
-		  root.file(fName, imageBlob[0]);
+	    imagePath = '';
+        if(isImage(qObj['Q'])) {
+          col = qObj.Q.split(";");
+          if(col.length == 1) {
+            imagePath = qObj['Q'];
+            qObj['Q'] = "";
+          } if(isImage(col[0])) {
+            imagePath = col[0];
+            qObj['Q'] = col[1];
+          } else {
+            imagePath = col[1];
+            qObj['Q'] = col[0];
+          }
+          qObj['Type'] = 1;
+		  if(imagePath !='' ) {
+            imageBlob[0] = await fetchImage(imagePath);
+		    fName = leadingZeros(qIndex, 3)+'.jpg';
+		    root.file(fName, imageBlob[0]);
+          }
         }
-      }
-	  qObj['okflag'] = 1;
-	  root.file( leadingZeros(qIndex, 3)+".txt", obj2Lines(qObj) );
-	  qIndex++;
-    }        
+	    qObj['okflag'] = 1;
+	    root.file( leadingZeros(qIndex, 3)+".txt", obj2Lines(qObj) );
+	    qIndex++;
+      }        
+    }
+    zip.generateAsync({type:"blob"})
+    .then(function(content) {
+      // see FileSaver.js
+      saveAs(content, data['Name']+".zip");
+    });
+  } else {
+    alert('▋試算表內容有誤\n\n請確認是 2P 遊戲題庫內容後再試一次');
   }
-  zip.generateAsync({type:"blob"})
-  .then(function(content) {
-    // see FileSaver.js
-    saveAs(content, data['Name']+".zip");
-  });
 }
 
 /**
