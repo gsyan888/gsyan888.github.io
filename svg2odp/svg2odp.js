@@ -155,7 +155,8 @@ function handlePaste(e) {
 
 function exportOdpFile(filename, zipSource, content) {
 	if(typeof(JSZip)=='undefined' || typeof(JSZip.loadAsync)!='function') {
-		alert('程式未載入, 無法製作 .odp 簡報檔案...');
+		loadJSFile(); //請著重新載入程式
+		alert('程式未載入, 無法製作 .odp 簡報檔案, 請再重試看看 ...');
 		return;
 	}
 	fetch(zipSource)
@@ -647,7 +648,11 @@ function generateOdpFile(selectors, unGroup) {
 	if(typeof(unGroup)!='undefined') {
 		unGroup = typeof(unGroup)=='boolean' && unGroup;
 	} else {
-		unGroup = document.querySelector('#ungroup-input').checked;
+		if((unGroup=document.querySelector('#ungroup-input')) && unGroup.checked) {
+			unGroup = true;
+		} else {
+			unGroup = false;
+		}
 	}
 	
 	const slideWidth = 28; //slide width (cm)
@@ -689,22 +694,24 @@ function generateOdpFile(selectors, unGroup) {
 		
 		svgConvert(xmlDoc, svgElement, x, y, scale, null, unGroup);
 	});
-	
-	var contentString = xmlDoc.exportToString();
-	
-	try {
-		document.getElementById('odpContent').value = contentString;
-	}catch(e){};
-	
-	//將內容放到 content.xml, 並加入 .odp 檔案中, 完成後自動匯出
-	if(svgList.length > 1) {
-		//var filename = '簡報-轉自-' + svgList.length + (words?'-'+words.substring(0,3):'') + '.odp'; //LibreOffice Impress file
-		var filename = '簡報-內含-SVG圖x' + svgList.length + '.odp'; //LibreOffice Impress file
-	} else {
-		var filename = svgList[0].parentElement.getAttribute('filename');
-		filename = '簡報-內含-' + (filename?filename.replace(/\.svg/i, '_svg'):'SVG') +  '.odp'; //LibreOffice Impress file
+	if(svgList.length > 0) {
+		var contentString = xmlDoc.exportToString();
+		
+		try {
+			document.getElementById('odpContent').value = contentString;
+		}catch(e){};
+		
+		//將內容放到 content.xml, 並加入 .odp 檔案中, 完成後自動匯出
+		var filename;
+		if(svgList.length > 1) {
+			//var filename = '簡報-轉自-' + svgList.length + (words?'-'+words.substring(0,3):'') + '.odp'; //LibreOffice Impress file
+			filename = '簡報-內含-SVG圖x' + svgList.length + '.odp'; //LibreOffice Impress file
+		} else {
+			filename = svgList[0].parentElement.getAttribute('filename');
+			filename = '簡報-內含-' + (filename?filename.replace(/\.svg/i, '_svg'):'SVG') +  '.odp'; //LibreOffice Impress file
+		}
+		exportOdpFile(filename, zipSource, contentString);
 	}
-	exportOdpFile(filename, zipSource, contentString)
 }
 
 function showMessage(msg) {
@@ -726,12 +733,14 @@ function showMessageMulti(txt) {
   el.className = "snackbar show";
   setTimeout(function(){ el.className = el.className.replace("snackbar show", "snackbar"); }, 3000);
 }
-var jsFileList = [
-	'https://gsyan888.github.io/svg2odp/jszip.min.js',
-	'https://gsyan888.github.io/svg2odp/flatten.js'
-];
-function loadJSFile() {
-	//if(typeof(JSZip)=='undefined' || typeof(JSZip.loadAsync)!='function') {            
+function loadJSFile(jsFileList) {
+	var jsFileListDefault = [
+		'https://gsyan888.github.io/svg2odp/jszip.min.js',
+		'https://gsyan888.github.io/svg2odp/flatten.js'
+	];
+	if(typeof(jsFileList)=='undefined' || jsFileList==null) {
+		jsFileList = jsFileListDefault;
+	}
 	if(jsFileList.length > 0) {
 		var js = document.createElement('script'); 
 		js.type = 'text/javascript';
@@ -739,7 +748,7 @@ function loadJSFile() {
 		js.onload = function () { 
 			jsFileList.splice(0, 1);
 			console.log('File loading left ... ' + jsFileList.length ); 
-			loadJSFile();
+			loadJSFile(jsFileList);
 		};
 		document.head.appendChild(js);
 	}
