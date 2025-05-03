@@ -48,7 +48,7 @@
 .svg-container {
   display: inline-block;
 }
-svg {
+.svg-container svg {
   border: 1px dashed gold;
   width: 125px;
   height: 125px;
