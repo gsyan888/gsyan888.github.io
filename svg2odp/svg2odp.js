@@ -806,5 +806,5 @@ function start() {
 }
 
 if (/SVG|ODP/i.test(document.title)) {    
-	start();
+	//start();
 }
