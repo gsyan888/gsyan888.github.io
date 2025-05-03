@@ -709,9 +709,13 @@ function generateOdpFile(selectors, unGroup) {
 
 function showMessage(msg) {
 	var x = document.getElementById("mySnackBar");
-	x.innerHTML = msg;
-	x.classList.add("show");
-	setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+	if(x) {
+		x.innerHTML = msg;
+		x.classList.add("show");
+		setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+	} else {
+		alert(msg);
+	}
 }
 function showMessageMulti(txt) {
   var el = document.createElement("div");
