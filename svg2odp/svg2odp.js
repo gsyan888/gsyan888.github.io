@@ -807,7 +807,7 @@ function triggerMagic(icon) {
 		var word = prompt('請輸入要轉換的國字', '');
 		if(typeof(word)=='string' && (word=word.replace(/[a-z0-9\.,;\-_\?\:\&\$\%\#\=\!\*\@\s]/ig,''))!='') {
 			showMessage('下載資料, 請稍候...');
-			moeStroke.toSvgFiles(word.trim(), function(files) {
+			moeStroke.toSVG(word.trim(), 0, true, true, function(files) {
 				var txt = 'SVG 圖檔下載失敗 ...';
 				if(files.length > 0) {
 					txt = '已新增 ' + files.length + '個 SVG 圖檔...';
