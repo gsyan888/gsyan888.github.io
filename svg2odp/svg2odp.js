@@ -689,8 +689,8 @@ function generateOdpFile(selectors, unGroup) {
 		//var scale = targetSize / px2cm(svgElement.getBBox().height);
 		var scale = targetSize / px2cm(Math.max(bb.width, bb.height));
 		//修正起始座標, 讓圖能放在中央
-		x += (offset - bb.width*scale)/2;
-		y += (offset - bb.height*scale)/2;
+		x += (offset - bb.width*scale)/2 - bb.x*scale;
+		y += (offset - bb.height*scale)/2  - bb.y*scale;
 		
 		svgConvert(xmlDoc, svgElement, x, y, scale, null, unGroup);
 	});
