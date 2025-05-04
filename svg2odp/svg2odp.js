@@ -797,6 +797,56 @@ function loadTemplate() {
 		}
 	});
 }
+
+function triggerMagic(icon) {
+	if(typeof(magicCouter)!='number') {
+		magicCouter = 0;
+	}
+	var getWords = function () {
+		
+		var word = prompt('請輸入要轉換的國字', '');
+		if(typeof(word)=='string' && (word=word.replace(/[a-z0-9\.,;\-_\?\:\&\$\%\#\=\!\*\@\s]/ig,''))!='') {
+			showMessage('下載資料, 請稍候...');
+			moeStroke.toSvgFiles(word.trim(), function(files) {
+				var txt = 'SVG 圖檔下載失敗 ...';
+				if(files.length > 0) {
+					txt = '已新增 ' + files.length + '個 SVG 圖檔...';
+					handleFiles(files);
+				}
+				showMessage(txt);
+			});
+		}
+	};
+	if(++magicCouter >= 3) {
+		icon.style.opacity = 1;
+		if(typeof(moeStroke)=='undefined') {
+			//載入筆順部件相關模組
+			var js = document.createElement('script'); 
+			js.type = 'text/javascript';
+			js.src = 'https://gsyan888.github.io/html5_fun/assets/moeStroke.min.js?v=20250504';
+			js.onload = function() { 
+				console.log('Script loaded ... '); 
+				if(typeof(getWords)=='function') {
+					getWords();
+				}
+			};
+			js.onerror = function() {
+				showMessage('程式載入失敗 ...');
+				document.head.removeChild(js);
+				icon.style.opacity = 0.35;
+				icon.style.scale = 1;
+				magicCouter = 0;
+			};
+			document.head.appendChild(js);
+		} else {
+			getWords();
+		}
+	} else {		
+		icon.style.opacity = Number(icon.style.opacity) + 0.15;
+		icon.style.scale = Number(icon.style.scale)||1 + 0.35;
+	}
+}
+
 function start() {
 	//showMessage('載入範本...');
 	loadTemplate();	
