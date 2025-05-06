@@ -804,7 +804,7 @@ function triggerMagic(icon) {
 	}
 	var getWords = function () {
 		
-		var word = prompt('請輸入要轉換的國字', '');
+		var word = prompt('請輸入要轉換的國字:\n🏠 筆順資料來源: 中華民國教育部「國字標準字體筆順學習網」\n⛔ 不得用於商業用途', '');
 		if(typeof(word)=='string' && (word=word.replace(/[a-z0-9\.,;\-_\?\:\&\$\%\#\=\!\*\@\s]/ig,''))!='') {
 			showMessage('下載資料, 請稍候...');
 			moeStroke.toSVG(word.trim(), 0, true, true, function(files) {
