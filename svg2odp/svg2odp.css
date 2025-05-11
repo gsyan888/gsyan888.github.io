@@ -142,3 +142,52 @@
   from {bottom: 30px; opacity: 1;}
   to {bottom: 0; opacity: 0;}
 }
+/* loading ring */
+.loading-ring {
+  color: #00A4E4;
+  display: block;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+.loading-ring label {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 40px;
+  color: #C1D82F;
+  color: brown;
+  font-weight: 900;
+  text-shadow: -1px 0 white, 0 1px white,, 1px 0 white,, 0 -1px white,,;
+  transform: translate(-50%, -50%);  
+}
+.loading-ring,
+.loading-ring:after {
+  box-sizing: border-box;
+}
+.loading-ring {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+.loading-ring:after {
+  content: " ";
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+  border-radius: 50%;
+  border: 8px solid currentColor;
+  border-color: currentColor transparent currentColor transparent;
+  animation: loading-ring 1.2s linear infinite;
+}
+@keyframes loading-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
