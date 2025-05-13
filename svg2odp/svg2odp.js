@@ -435,15 +435,16 @@ function parseContentXml(xmlStr) {
 	};
 	xmlDoc.getDrawAttribute = function(elm) {
 		var bbox = elm.getBBox();
+		var computedStyle = window.getComputedStyle(elm); //取得最終的 style 備用
 		var attr = {
 			width: bbox.width,
 			height: bbox.height,
 			x: bbox.x,
 			y: bbox.y,
 			viewbox: `${bbox.x} ${bbox.y} ${bbox.width} ${bbox.height}`,		
-			fill: rgbToHex(elm.style.fill || elm.getAttribute('fill') || 'none'),
-			stroke: rgbToHex(elm.style.stroke || elm.getAttribute('stroke') || 'none'),
-			strokeWidth: px2cm(elm.style['stroke-width'] || elm.getAttribute('stroke-width') || 0)
+			fill: rgbToHex(elm.style.fill || elm.getAttribute('fill') || computedStyle['fill'] || 'none'),
+			stroke: rgbToHex(elm.style.stroke || elm.getAttribute('stroke') || computedStyle['stroke'] || 'none'),
+			strokeWidth: px2cm(elm.style['stroke-width'] || elm.getAttribute('stroke-width') || parseInt(computedStyle['stroke-width']) || 0)
 		}
 		if(attr.strokeWidth == 0) {
 			attr.stroke = 'none';
