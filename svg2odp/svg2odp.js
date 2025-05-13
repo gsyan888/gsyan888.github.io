@@ -435,7 +435,7 @@ function parseContentXml(xmlStr) {
 	};
 	xmlDoc.getDrawAttribute = function(elm) {
 		var bbox = elm.getBBox();
-		var computedStyle = window.getComputedStyle(elm); //取得最終的 style 備用
+		var computedStyle = {}; //window.getComputedStyle(elm); //取得最終的 style 備用
 		var attr = {
 			width: bbox.width,
 			height: bbox.height,
