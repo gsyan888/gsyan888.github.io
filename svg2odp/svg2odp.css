@@ -142,6 +142,7 @@
   from {bottom: 30px; opacity: 1;}
   to {bottom: 0; opacity: 0;}
 }
+
 /* loading ring */
 .loading-ring {
   color: #00A4E4;
@@ -156,11 +157,12 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  font-size: 40px;
+  font-size: 10vmin;
   color: #C1D82F;
-  color: brown;
+  color: #259D59;
   font-weight: 900;
-  text-shadow: -1px 0 white, 0 1px white,, 1px 0 white,, 0 -1px white,,;
+  /* text-shadow: -1px 0 white, 0 1px white,, 1px 0 white,, 0 -1px white,,; */
+  text-shadow: 0 0 4px white, 0 0 4px white, 0 0 4px white, 0 0 4px white, 0 0 4px white, 0 0 4px white, 0 0 4px white, 0 0 4px white, 0 0 4px white, 0 0 4px white, 0 0 4px white, 0 0 4px white, 0 0 4px white, 0 0 4px white, 0 0 4px white;
   transform: translate(-50%, -50%);  
 }
 .loading-ring,
@@ -169,17 +171,17 @@
 }
 .loading-ring {
   display: inline-block;
-  width: 100px;
-  height: 100px;
+  width: 25vmin;
+  height: 25vmin;
 }
 .loading-ring:after {
   content: " ";
   display: block;
-  width: 80px;
-  height: 80px;
+  width: 20vmin;
+  height: 20vmin;
   margin: 10px;
   border-radius: 50%;
-  border: 8px solid currentColor;
+  border: 2vmin solid currentColor;
   border-color: currentColor transparent currentColor transparent;
   animation: loading-ring 1.2s linear infinite;
 }
