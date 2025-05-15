@@ -444,7 +444,7 @@ function parseContentXml(xmlStr) {
 			viewbox: `${bbox.x} ${bbox.y} ${bbox.width} ${bbox.height}`,		
 			fill: rgbToHex(elm.style.fill || elm.getAttribute('fill') || computedStyle['fill'] || 'none'),
 			stroke: rgbToHex(elm.style.stroke || elm.getAttribute('stroke') || computedStyle['stroke'] || 'none'),
-			strokeWidth: px2cm(elm.style['stroke-width'] || elm.getAttribute('stroke-width') || parseInt(computedStyle['stroke-width']) || 0)
+			strokeWidth: px2cm(elm.style['stroke-width'] || elm.getAttribute('stroke-width') || parseInt(computedStyle['stroke-width']) || 0),
 		}
 		if(attr.strokeWidth == 0) {
 			attr.stroke = 'none';
@@ -821,11 +821,11 @@ function triggerMagic(icon) {
 	};
 	var getWords = function () {
 		
-		var word = prompt('請輸入要轉換的國字:\n🏠 筆順資料來源: 中華民國教育部「國字標準字體筆順學習網」\n⛔ 不得用於商業用途', '');
-		if(typeof(word)=='string' && (word=word.replace(/[a-z0-9\.,;\-_\?\:\&\$\%\#\=\!\*\@\s]/ig,''))!='') {
+		var word = prompt('✅ 請輸入要轉換的國字:\n\n🏠 筆順資料來源: 中華民國教育部「國字標準字體筆順學習網」\n\n⛔ 不得用於商業用途\n', '');
+		if(typeof(word)=='string' && (word=word.replace(/[a-z0-9\.,;\-_\?\:\&\$\%\#\=\!\*\@\(\)\[\]\'\"\s，；。「」？！]/ig,''))!='') {
 			if(word.length <= 20) {
 				showMessage('下載資料, 請稍候...');
-				moeStroke.toSVG(word.trim(), 0, true, true, updateProgress, function(files) {
+				moeStroke.toSVG(word.trim(), 0, false, true, true, updateProgress, function(files) {
 					var txt = 'SVG 圖檔下載失敗 ...';
 					if(files.length > 0) {
 						txt = '已新增 ' + files.length + '個 SVG 圖檔...';
@@ -834,7 +834,7 @@ function triggerMagic(icon) {
 					showMessage(txt);
 				});
 			} else {
-				alert('已超過下載上限...');
+				alert('一次下載太多個字, 已超過下載上限...');
 				location.reload();
 			}
 		}
