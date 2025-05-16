@@ -51,6 +51,29 @@ function updateMaskLabel(svgElement, maskId) {
 	}
 }
 /**
+ * 在第二個字上疊第一個字的字框, 方便觀察
+ */
+function addGhost() {
+	var wrapper = document.querySelector('#mask-test-wrapper');
+	var svg = document.querySelectorAll('#svgWrapper svg');
+	if(svg && wrapper) {
+		var ghost = svg[0].cloneNode(true);
+		ghost.setAttribute('id', 'svg-ghost');
+		ghost.style.position = 'absolute';
+		ghost.querySelectorAll('g').forEach(g=>{
+			g.setAttribute('stroke-opacity', 1);
+			g.setAttribute('fill', 'none');
+			g.setAttribute('stroke', '#B5B2B2');
+			g.setAttribute('stroke-width', 8);
+			g.setAttribute('stroke-dasharray', '10,10');
+		});
+		var cloneList = ['width', 'height', 'top', 'left'];
+		var b = svg[1].getBoundingClientRect();
+		cloneList.forEach(a=>ghost.style[a] = b[a]+'px');
+		wrapper.appendChild(ghost);
+	}
+}
+/**
  *
  * @param {number} demoIndex
  * @param {Object} target
