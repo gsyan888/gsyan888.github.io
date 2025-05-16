@@ -22,7 +22,7 @@ function loadSVG() {
 					const svgElement = svgDoc.documentElement;
 					const container = document.createElement('div');
 					container.setAttribute('class', 'svg-container');
-					container.innerHTML = '<label>SVG</label>';
+					container.innerHTML = '<label>SVG ' + (wrapper.children.length+1) + ' </label>';
 					container.appendChild(svgElement);
 					wrapper.appendChild(container);
 				} else {
