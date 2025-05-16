@@ -7,6 +7,7 @@
   /* transform: translate(0px, 0px); */
   text-align: center;
   border: 1px solid green;
+  white-space: nowrap;
 }
 .svg-container {
   display: inline-block;
