@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+
+* {
+	box-sizing: border-box;
+	touch-action: manipulation;
+	-webkit-tap-highlight-color: transparent;
+}
+
+#HTML5FunWrapper {		
+	touch-action: none; /* Prevents default touch actions */
+	display: block;
+	position:fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	margin: auto;
+	z-index:10000;
+	visibility: hidden;  /* visible;	*/
+	/* border: 1px dashed; */
+	
+	
+	visibility: visible;
+}
+#gameWrapper {
+	display: block;
+	position: absolute;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/* border: 1px dashed #D7DBDD; */
+	margin: auto;
+	-webkit-user-select: none;
+	user-select: none;
+	
+	padding: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	
+	/* Doodle Car Body */
+	margin: 0 ;
+	padding: 0;
+	background: #0f0c29;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: 'Bubblegum Sans', cursive;
+	color: #fff;
+	background-image: radial-gradient(#ffffff10 1px, transparent 1px),
+					 radial-gradient(#ffffff10 1px, transparent 1px);
+	background-size: 30px 30px;
+	background-position: 0 0, 15px 15px;
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+	height: 100%;		
+}
+.credit {
+	position: absolute;
+	transform: translate(0%, 0%);
+	left: 0;
+	bottom: 0.75rem;
+	border-radius: 2em;
+	font-size: 0.5rem;
+	height: 1rem;
+	white-space: nowrap;
+	line-height:1;
+	padding: 0em 1.25em;
+	cursor: pointer;
+	color: #3B375E;
+}
+.credit label{
+	pointer-events: none;
+}
+.btn-code{
+	display: inline-block;
+	position: absolute;
+	/* transform: translate(-50%, -50%); */
+	width: 32px;
+	height: 32px;
+	right: 0px;
+	top: 3px;
+	margin: 3px;
+	border-radius: 100%;
+	background-color: #00ffff40;	
+	background-image: url("https://gsyan888.github.io/assets/ddcar/icon-code.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+	z-index: 100;
+}
+#game-container {
+	position: relative;
+	width: 100%;
+	max-width: 800px;
+	height: 100vh;
+	max-height: 600px;
+	box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+	border-radius: 25px;
+	overflow: hidden;
+	border: 8px solid #302b63;
+	transition: all 0.3s ease;
+	margin: auto;
+}
+
+#ui-container {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	z-index: 10;
+	background: rgba(48, 43, 99, 0.8);
+	padding: 10px;
+	border-top: 5px dashed #24243e;
+	transition: all 0.3s ease;
+	min-height: 5.5vmin;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+button {
+	background: #6a4c93;
+	color: white;
+	border: none;
+	padding: 0.8vmin 1.5vmin;
+	border-radius: 50px;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 3vmin;
+	font-family: 'Bubblegum Sans', cursive;
+	transition: all 0.3s;
+	box-shadow: 0 4px 0 #4a3573;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+	min-width: 15vmin;
+	touch-action: manipulation;
+	/* Fix for iOS */
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	white-space: nowrap;
+}
+
+button:hover, button:active {
+	transform: translateY(-3px) scale(1.05);
+	box-shadow: 0 7px 0 #4a3573;
+}
+
+button:active {
+	transform: translateY(1px);
+	box-shadow: 0 2px 0 #4a3573;
+}
+
+button:disabled {
+	background: #b8b8d1;
+	color: #fff;
+	box-shadow: 0 4px 0 #9999b3;
+	cursor: not-allowed;
+	transform: none;
+}
+
+#start-btn {
+	background: #78e08f;
+	box-shadow: 0 4px 0 #38ada9;
+}
+
+#undo-btn {
+	background: #f6b93b;
+	box-shadow: 0 4px 0 #e58e26;
+}
+
+#clear-btn {
+	background: #ff6b6b;
+	box-shadow: 0 4px 0 #ee5253;
+}
+
+#insert-btn {
+	background: #54a0ff;
+	box-shadow: 0 4px 0 #2e86de;
+}
+
+#reset-btn {
+	background: #a29bfe;
+	box-shadow: 0 4px 0 #8c7ae6;
+}
+
+.modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -55%);
+	background: rgba(48, 43, 99, 0.95);
+	border-radius: 25px;
+	padding: 20px;
+	text-align: center;
+	z-index: 20;
+	display: none;
+	border: 8px solid #24243e;
+	box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+	width: 90%;
+	max-width: 300px;
+}
+
+.modal h2 {
+	color: #fff;
+	margin-top: 0;
+	font-size: 28px;
+}
+
+.modal p {
+	font-size: 18px;
+	margin-bottom: 15px;
+	color: #fff;
+}
+
+.modal button {
+	margin: auto;
+	margin-top: 18px;
+	font-size: 18px;
+	padding: 12px 25px;	
+}
+
+#instructions {
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	background: rgba(48, 43, 99, 0.8);
+	padding: 10px 15px;
+	border-radius: 50px;
+	font-size: 16px;
+	z-index: 10;
+	border: 4px dashed #24243e;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+	color: #fff;
+	transition: all 0.3s ease;
+	white-space: nowrap;
+}
+
+.btn-icon {
+	font-size: 2.5vmin;
+	margin-right: 3px;
+}
+
+/* Background elements that won't interfere with pointer events */
+#background-elements {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	pointer-events: none;
+}
+
+/* Stars */
+.star {
+	position: absolute;
+	background: white;
+	border-radius: 50%;
+	opacity: 0.8;
+	pointer-events: none;
+}
+
+@keyframes twinkle {
+	0% { opacity: 0.2; }
+	50% { opacity: 1; }
+	100% { opacity: 0.2; }
+}
+
+#orientation-message {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(15, 12, 41, 0.95);
+	z-index: 1000;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 20px;
+	flex-direction: column;
+	animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+@keyframes bounce {
+	0%, 100% { transform: translateY(0); }
+	50% { transform: translateY(-10px); }
+}
+
+
+#orientation-message div {
+	background: #302b63;
+	padding: 20px;
+	border-radius: 20px;
+	max-width: 300px;
+	border: 5px solid #24243e;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+#orientation-message h2 {
+	color: #fff;
+	margin-top: 0;
+}
+
+#orientation-message p {
+	margin-bottom: 15px;
+}
+
+#orientation-icon {
+	font-size: 40px;
+	margin: 15px 0;
+	animation: bounce 2s infinite;
+}
+
+#orientation-dismiss {
+	background: #6a4c93;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 50px;
+	font-family: 'Bubblegum Sans', cursive;
+	font-size: 16px;
+	cursor: pointer;
+	margin-top: 15px;
+	box-shadow: 0 4px 0 #4a3573;
+}
+
+#orientation-dismiss:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 6px 0 #4a3573;
+}
+
+#orientation-dismiss:active {
+	transform: translateY(2px);
+	box-shadow: 0 2px 0 #4a3573;
+}
+
+
+
