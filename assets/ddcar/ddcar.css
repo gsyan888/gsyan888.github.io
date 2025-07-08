@@ -5,9 +5,7 @@
 	touch-action: manipulation;
 	-webkit-tap-highlight-color: transparent;
 }
-
-#HTML5FunWrapper {
-	all: initial;
+#HTML5FunWrapper {	
 	touch-action: none; /* Prevents default touch actions */
 	display: block;
 	position:fixed;
