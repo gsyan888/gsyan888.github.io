@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
 
+* {
+	box-sizing: border-box;
+	touch-action: manipulation;
+	-webkit-tap-highlight-color: transparent;
+}
 
 #HTML5FunWrapper {
 	all: initial;
@@ -14,19 +19,15 @@
 	z-index:10000;
 	visibility: hidden;  /* visible;	*/
 	/* border: 1px dashed; */
-	
-	
-	visibility: visible;
 }
 #HTML5FunWrapper h2 {
-	all: initial;
-}
-* {
-	box-sizing: border-box;
-	touch-action: manipulation;
-	-webkit-tap-highlight-color: transparent;
-}
+	font: normal bold 28px 'Bubblegum Sans', cursive;
+	letter-spacing: unset;
+	text-transform: unset;
+	line-height: unset;
+	margin: unset;
 
+}
 #gameWrapper {
 	display: block;
 	position: absolute;
