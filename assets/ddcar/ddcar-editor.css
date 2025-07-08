@@ -11,7 +11,7 @@ html, body {
 }
 */
 
-HTML5FunWrapper {		
+#HTML5FunWrapper {
 	touch-action: none; /* Prevents default touch actions */
 	display: block;
 	position:fixed;
