@@ -24,7 +24,15 @@ HTML5FunWrapper {
 	visibility: hidden;  /* visible;	*/
 	/* border: 1px dashed; */	
 	
-	visibility: visible;
+	/* Doodle Car Editor Body */
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	overflow: hidden;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #1a1a2e;
+	color: #e6e6e6;
+	touch-action: manipulation;
 }
 #gameWrapper {
 	display: block;
@@ -40,16 +48,6 @@ HTML5FunWrapper {
 	-webkit-user-select: none;
 	user-select: none;
 
-
-	/* Doodle Car Editor Body */
-	margin: 0;
-	padding: 0;
-	height: 100%;
-	overflow: hidden;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	background-color: #1a1a2e;
-	color: #e6e6e6;
-	touch-action: manipulation;
 }
 
 .app-container {
