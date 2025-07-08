@@ -18,14 +18,6 @@
 	visibility: hidden;  /* visible;	*/
 	/* border: 1px dashed; */
 }
-#HTML5FunWrapper h2 {
-	font: normal bold 28px 'Bubblegum Sans', cursive;
-	letter-spacing: unset;
-	text-transform: unset;
-	line-height: unset;
-	margin: unset;
-
-}
 #gameWrapper {
 	display: block;
 	position: absolute;
@@ -215,6 +207,11 @@ button:disabled {
 }
 
 .modal h2 {
+	font: normal bold 28px 'Bubblegum Sans', cursive;
+	letter-spacing: unset;
+	text-transform: unset;
+	line-height: unset;
+	margin: unset;	
 	color: #fff;
 	margin-top: 0;
 	font-size: 28px;
