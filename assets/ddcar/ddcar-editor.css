@@ -144,7 +144,10 @@ HTML5FunWrapper {
 	min-width: 200px;
 	max-width: 300px;
 }
-
+.config-container h3 {
+    margin: initial;
+    color: inherit;
+}
 .config-content {
 	flex: 1;
 	overflow-y: auto;
