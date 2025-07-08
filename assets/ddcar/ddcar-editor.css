@@ -52,6 +52,17 @@ html, body {
 	user-select: none;
 
 }
+#HTML5FunWrapper h3 {
+    margin: initial;
+    color: inherit;
+}
+#HTML5FunWrapper h2 {
+	letter-spacing: unset;
+	text-transform: unset;
+	line-height: unset;
+	margin: unset;	
+	color: #fff;
+}
 
 .app-container {
 	display: flex;
@@ -144,17 +155,6 @@ html, body {
 	width: 250px;
 	min-width: 200px;
 	max-width: 300px;
-}
-.config-container h3 {
-    margin: initial;
-    color: inherit;
-}
-.config-container h2 {
-	letter-spacing: unset;
-	text-transform: unset;
-	line-height: unset;
-	margin: unset;	
-	color: #fff;
 }
 .config-content {
 	flex: 1;
