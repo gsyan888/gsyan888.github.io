@@ -151,7 +151,7 @@ html, body {
 	text-transform: unset;
 	line-height: unset;
 	margin: unset;	
-	color: inherit;
+	color: #fff;
 }
 .config-content {
 	flex: 1;
