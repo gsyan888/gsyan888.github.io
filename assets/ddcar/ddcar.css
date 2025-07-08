@@ -1,12 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
 
-* {
-	box-sizing: border-box;
-	touch-action: manipulation;
-	-webkit-tap-highlight-color: transparent;
-}
 
-#HTML5FunWrapper {		
+#HTML5FunWrapper {
+	all: initial;
 	touch-action: none; /* Prevents default touch actions */
 	display: block;
 	position:fixed;
@@ -22,6 +18,15 @@
 	
 	visibility: visible;
 }
+#HTML5FunWrapper h2 {
+	all: initial;
+}
+* {
+	box-sizing: border-box;
+	touch-action: manipulation;
+	-webkit-tap-highlight-color: transparent;
+}
+
 #gameWrapper {
 	display: block;
 	position: absolute;
