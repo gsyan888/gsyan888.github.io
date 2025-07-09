@@ -582,6 +582,9 @@ button {
 	border-color: #e94560;
 	box-shadow: 0 0 0 2px rgba(233, 69, 96, 0.2);
 }
+.import-textarea::placeholder {
+    color: gray;
+}
 
 /* Mobile optimizations */
 @media (max-width: 768px) {
