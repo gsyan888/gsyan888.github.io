@@ -7,3 +7,6 @@
   - http://www.brenda88.idv.tw/2010/04/06.html
 - richman
   - Game迷世紀
+- bpm-web.swf
+  - 創意ㄅㄆㄇ整合版 (來源:優質特教網:特教教材資料庫 by 楊妮曼老師)
+  - https://sencir.spc.ntnu.edu.tw/GoWeb/include/index.php?Page=6-5&news03=672
