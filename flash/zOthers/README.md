@@ -8,5 +8,5 @@
 - richman
   - Game迷世紀
 - bpm-web.swf
-  - 創意ㄅㄆㄇ整合版 (來源:優質特教網:特教教材資料庫 by 楊妮曼老師)
+  - 創意ㄅㄆㄇ整合版 (來源:教育部優質特教網:特教教材資料庫 by 楊妮曼老師)
   - https://sencir.spc.ntnu.edu.tw/GoWeb/include/index.php?Page=6-5&news03=672
