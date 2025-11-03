@@ -845,7 +845,7 @@ function triggerMagic(icon) {
 			//載入筆順部件相關模組
 			var js = document.createElement('script'); 
 			js.type = 'text/javascript';
-			js.src = 'https://gsyan888.github.io/html5_fun/assets/moeStroke.min.js?v=202510211242';
+			js.src = 'https://gsyan888.github.io/html5_fun/assets/moeStroke.min.js?v=202511021827';
 			js.onload = function() { 
 				console.log('Script loaded ... '); 
 				if(typeof(getWords)=='function') {
