@@ -10,3 +10,6 @@
 - bpm-web.swf
   - 創意ㄅㄆㄇ整合版 (來源:教育部優質特教網:特教教材資料庫 by 楊妮曼老師)
   - https://sencir.spc.ntnu.edu.tw/GoWeb/include/index.php?Page=6-5&news03=672
+- bpm-west
+  - ㄅㄆㄇ西遊記 (來源: 桃園縣政府教育局, 底下為原下載網址, 已失效)
+  - https://www.tyc.edu.tw/files/west/index.htm
