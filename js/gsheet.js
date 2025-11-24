@@ -79,10 +79,11 @@ function gdGetSpreadSheetQueryURL(urlOrId, sheet, query, headers) {
  *
  * @param {string} url 試算表查詢資料的網址
  * @param {Function} callback 查到資料後要執的程序
+ * @param {number} timeoutTotal 等幾個輪迴
  * @return {Object'}
  */
-async function gdGetSpreadSheetData(url, callback)  {
-  var timeoutTotal = 30; // 30 * 100 = 3sec. 等它3秒查詢
+async function gdGetSpreadSheetData(url, callback, timeoutTotal)  {
+  timeoutTotal = timeoutTotal || 30; // 30 * 100 = 3sec. 等它3秒查詢
   var sheetQueryResult = null;
   
   //JSONP 呼叫 callback
@@ -124,6 +125,9 @@ async function gdGetSpreadSheetData(url, callback)  {
       }
     }	  
 	sheetQueryResult = values;
+	if( typeof callback == 'function' ) {
+      callback(sheetQueryResult);	//執行指定的函數
+    } 
   };
   //查詢試算表的程序
   var nocacheVal = 'nocache=' + new Date().getTime();	//為了避免 cache 的問題,在檔名後加亂數
@@ -144,7 +148,7 @@ async function gdGetSpreadSheetData(url, callback)  {
     scriptToAdd.onerror = null;	//將事件移除
     document.getElementsByTagName('head')[0].removeChild(scriptToAdd);	//移除 script
     if( typeof callback == 'function' ) {
-      callback();	//執行指定的函數
+      callback(sheetQueryResult);	//執行指定的函數
     } else {
       var msg = '無法載入設定.';
       var resultBlock = document.querySelector('.resultBlock');
@@ -226,5 +230,6 @@ async function getSheetData(url) {
   var data = await gdGetSpreadSheetData(qURL); //抓題庫用(整個工作表的資料)
   return data;
 }
+
 
 
