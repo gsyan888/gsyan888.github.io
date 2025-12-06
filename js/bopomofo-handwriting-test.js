@@ -13,8 +13,8 @@ var bopomofo = document.getElementById('bopomofo');
 
 var isDrawing = false;
 var currentStroke = [];
-var strokes = [];  // 存储所有字的笔画
-var boundingBoxes = []; // 存储每个字的边框坐标	
+var strokes = [];  // 存所有字的筆畫
+var boundingBoxes = []; // 存所有筆畫的邊框
 var drawingTimeoutId = -1;
 
 /**
@@ -50,7 +50,7 @@ function onStartDrawing(e) {
   currentStroke = [];
   if(e.touches) e = e.changedTouches[0]; //暫時只取第一觸控
   var pos = getCoords(e);
-  currentStroke.push([pos.x, pos.y]);
+  currentStroke.push(pos);
 }
 function onDrawing(e) {
   if (!isDrawing) return;
@@ -60,15 +60,14 @@ function onDrawing(e) {
   
   if(e.touches) e = e.changedTouches[0]; //暫時只取第一觸控
   var pos = getCoords(e);
-
-  currentStroke.push([pos.x, pos.y]);
+  currentStroke.push(pos);
 	
   ctx.strokeStyle = 'black';
   ctx.setLineDash([]); //solid line
   ctx.lineCap = 'round';
   ctx.lineWidth = 3;			
   ctx.beginPath();
-  ctx.moveTo(currentStroke[currentStroke.length - 2][0], currentStroke[currentStroke.length - 2][1]);
+  ctx.moveTo(currentStroke[currentStroke.length - 2].x, currentStroke[currentStroke.length - 2].y);
   ctx.lineTo(pos.x, pos.y);
   ctx.stroke();
 }
@@ -143,11 +142,11 @@ function groupStrokes(strokes) {
   return result;
 }
 
-// 计算每个笔画的边界框
+// 計算每一個筆畫的邊界框
 function getBoundingBox(stroke) {
   var d = 5; //稍加大範圍
-  var xs = stroke.map(p => p[0]);
-  var ys = stroke.map(p => p[1]);
+  var xs = stroke.map(p => p.x);
+  var ys = stroke.map(p => p.y);
   var minX = Math.min(...xs) - d;
   var maxX = Math.max(...xs) + d;
   var minY = Math.min(...ys) - d;
@@ -166,11 +165,11 @@ function mergeBoundingBox(box1, box2) {
   return [minX, minY, sizeX, sizeY];
 }
 
-// 计算每个字的边框并绘制红框
+// 計算每一個筆畫的邊界框並畫紅框
 function updateBoundingBox(stroke) {
   var boundingBox = getBoundingBox(stroke);
 
-  // 检查是否和前一个字的笔画重叠
+  // 檢查是否和前一個框重疊
   var isMerged = false;
   var overlapIndex = -1;
   var box = [];
@@ -184,10 +183,10 @@ function updateBoundingBox(stroke) {
   }
 
   if (!isMerged) {
-    // 绘制红色边框
+    // 畫紅色虛框
     dashedBox(boundingBox);
 
-    // 记录这个字的边框
+    // 記錄這個字的邊框
     boundingBoxes.push(boundingBox);
   } else {
     boundingBoxes[overlapIndex] = mergeBoundingBox(box, boundingBox);
@@ -219,28 +218,28 @@ function updateBoundingBoxAgain() {
   }
 }
 
-// 更新画布，重新绘制合并后的所有笔画和红框
+// 更新畫布, 重繪合併後的所有筆畫和紅框
 function redraw() {
-  // 清空画布
+  // 清空畫布
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
   gridLines();
 
-  // 重新绘制所有笔画
+  // 重繪所有筆畫
   for (var stroke of strokes) {
     ctx.strokeStyle = 'black';
     ctx.lineCap = 'round';
     ctx.setLineDash([]); //solid line
     ctx.lineWidth = 3;
     ctx.beginPath();
-    ctx.moveTo(stroke[0][0], stroke[0][1]);
+    ctx.moveTo(stroke[0].x, stroke[0].y);
     for (var i = 1; i < stroke.length; i++) {
-      ctx.lineTo(stroke[i][0], stroke[i][1]);
+      ctx.lineTo(stroke[i].x, stroke[i].y);
     }
     ctx.stroke();
   }
 
-  // 重新绘制所有红框
+  // 重繪所有紅框
   for (var box of boundingBoxes) {
     dashedBox(box);
   }
@@ -419,17 +418,21 @@ function getPostDataByStroke(stroke, canvas) {
   if(stroke && stroke.length > 0) {
     stroke.forEach(s => {
       var points = [[], []];
-      //var path = window['simplify'](s.points, 1, true);
-      //path.forEach(p => {
-      //  points[0].push(Math.round(p.x));
-      //  points[1].push(Math.round(p.y));
-      //});
-      s.forEach(p=>{
-      points[0].push(Math.round(p[0]));
-      points[1].push(Math.round(p[1]));
-      });
+      if(typeof(window['simplify']) == 'function') {
+        var path = window['simplify'](s, 1, true);
+		console.log(s, ' ==> ', path);
+        path.forEach(p => {
+          points[0].push(Math.round(p.x));
+          points[1].push(Math.round(p.y));
+        });
+      } else {
+        s.forEach(p=>{
+          points[0].push(Math.round(p.x));
+          points[1].push(Math.round(p.y));
+        });
+      }
       trace.push(points);
-      if (points[0].length > 2)
+      if (points[0].length > 1)
       ready = true;
     });
   }
@@ -466,7 +469,7 @@ async function fetchHandwritingResult(data) {
   return result;
 }
 
-// 每当笔画绘制结束后自动输出坐标
+// 停筆後自動輸出結果
 //setInterval(outputStrokes, 1000);  // 每秒更新输出
 
 //依注音拼寫規則分解注音字串為陣列
@@ -597,7 +600,7 @@ function splitZhuyin(str) {
 function init() {
 
   gridLines();
-  document.querySelector('#HTML5FunWrapper').style.visibility = 'visible';
+  //document.querySelector('#HTML5FunWrapper').style.visibility = 'visible';
   isDrawing = false;
   currentStroke = [];
   strokes = [];
