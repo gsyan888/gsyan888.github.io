@@ -9,6 +9,7 @@ var outputElement = document.getElementById('output');
 var clearBtn = document.getElementById('clearBtn');
 var outputBtn = document.getElementById('outputBtn');
 var undoBtn = document.getElementById('undoBtn');
+var rearrangementCheck = document.getElementById('rearrangementCheck');
 var bopomofo = document.getElementById('bopomofo');
 
 var isDrawing = false;
@@ -359,6 +360,7 @@ async function outputStrokes() {
   bopomofo.innerHTML = html;
   void bopomofo.offsetWidth; // 讀取 offsetWidth 觸發重繪
   Array.from(bopomofo.children).forEach(c=>void c.offsetWidth);
+  rearrangementCheck.checked = false;
 
   //整個辨識看看
   data = getPostDataByStroke(null, canvas);
@@ -596,7 +598,39 @@ function splitZhuyin(str) {
 
   return result;
 }
-
+function rubyRearrangement(act) {
+  if(typeof(act)!='string' || act != 'split') {
+    act = 'join';
+  }
+  var ch = '', ph = '', rt, newRuby, next;
+  var ruby = bopomofo.querySelectorAll('ruby');
+  var ruby = bopomofo.children;
+  for(var i=0; i<ruby.length; i++) {
+    next = ruby[i+1];
+    if(act == 'join') {
+      if(ruby[i].textContent[0] != '　' && next && next.textContent[0] == '　') {
+        ch = ruby[i].textContent[0];
+        ph = next.textContent.substring(1);
+        ruby[i].innerHTML = ch + '<rt>' + ph + '</rt>';
+        ruby[i+1].remove();
+      }
+    } else {
+      if(ruby[i].textContent[0] != '　' && (rt=ruby[i].querySelector('rt')) && rt.textContent.replace(/\s/g,'') != '') {
+        newRuby = document.createElement('ruby');
+        newRuby.innerHTML = '　';
+        newRuby.appendChild(rt);
+        if(next) {
+          ruby[i].parentElement.insertBefore(newRuby, next);
+        } else {
+		  ruby[i].parentElement.appendChild(newRuby);
+        }
+		i++; //skip new create one
+      }
+    }
+  }
+  void bopomofo.offsetWidth; // 讀取 offsetWidth 觸發重繪
+  Array.from(bopomofo.children).forEach(c=>void c.offsetWidth);
+}
 function init() {
 
   gridLines();
@@ -631,6 +665,10 @@ function init() {
     redraw();
     outputStrokes();
   });
+  rearrangementCheck.addEventListener('click', (e) => {
+	  console.log('debug: ',e, e.target.checked);
+    rubyRearrangement(e.target.checked?'join':'split');
+  });  
   outputBtn.addEventListener('click', () => {
     outputElement.textContent = '';
     outputStrokes();
